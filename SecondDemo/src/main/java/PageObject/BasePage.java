@@ -1,11 +1,10 @@
 package PageObject;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.util.concurrent.TimeUnit;
@@ -16,13 +15,14 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         this.driver = driver;
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
         PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//div[@class=\"bui-header__main\"]")
     private WebElement bookingComLogo;
 
-    @FindBy(id = "language-selection")
+    @FindBy(xpath = "//button[@data-modal-id=\"language-selection\"]")
     private WebElement languageSelection;
 
     @FindBy(xpath = "//a[@class=\"bui-button bui-button--light bui-button--large\"]")
@@ -37,6 +37,11 @@ public class BasePage {
     @FindBy(partialLinkText = "Жилье")
     private WebElement staysButton;
 
+    @FindBy(css = ".bui-modal__header")
+    private WebElement languagePopUp;
+
+    @FindBy(xpath = "//div[@lang=\"en-us\"]")
+    private WebElement englishLanguageButton;
 
     SoftAssert softAssert = new SoftAssert();
    public BasePage openBooking(){
@@ -50,11 +55,43 @@ public class BasePage {
         return this;
     }
 
-    public BasePage checkLanguageSelectionButtonIsDisplayed() {
+    public BasePage checkLanguageSelectionButtonIsEnabled() {
         System.out.println("Language button is enabled: " + languageSelection.isEnabled());
+        softAssert.assertTrue(languageSelection.isEnabled());
         return this;
     }
 
+    public BasePage clickOnLanguageSelectionButton() {
+       languageSelection.click();
+       return this;
+    }
+
+    public BasePage checkLanguagePopUpIsDisplayed(){
+       System.out.println("Language popup is displayed: " + languagePopUp.isDisplayed());
+       softAssert.assertTrue(languagePopUp.isDisplayed());
+       return this;
+    }
+
+    public BasePage checkEnglishLanguageButtonIsEnabled(){
+       System.out.println("English language button is enabled: " + englishLanguageButton.isEnabled());
+       softAssert.assertTrue(englishLanguageButton.isEnabled());
+       return this;
+    }
+
+    public BasePage clickOnEnglishLanguageButton(){
+        englishLanguageButton.click();
+       return this;
+    }
+
+    public StaysPage checkLanguagePopUpIsNotDisplayed(){
+       try {
+           softAssert.assertFalse(languagePopUp.isDisplayed());
+       } catch (NoSuchElementException e){
+           System.out.println("Everything is fine. Language popup isn't displayed.");
+       }
+        softAssert.assertAll();
+        return new StaysPage(driver);
+    }
 
     public BasePage checkQuestionMarkButtonIsEnabled() {
         System.out.println("Question mark button is enabled: " + questionMarkButton.isEnabled());

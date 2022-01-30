@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class StaysPage extends BasePage {
 
     public StaysPage(WebDriver driver) {
@@ -47,6 +49,24 @@ public class StaysPage extends BasePage {
 
     @FindBy(css = "[data-room-count]")
     private WebElement roomCount;
+
+    @FindBy(css = "#xp__guests__toggle")
+    private WebElement guestsToggle;
+
+    @FindBy(css = "#xp__guests__inputs-container")
+    private WebElement guestsInputsContainer;
+
+    @FindBy(xpath = "//button[@class=\"bui-button bui-button--secondary bui-stepper__add-button \"]")
+    private List<WebElement> addButton;
+
+    @FindBy(xpath = "//button[@data-sb-id=\"main\"]")
+    private WebElement checkPricesButton;
+
+    @FindBy(xpath = "//h1[@class=\"_30227359d _0db903e42\"]")
+    private WebElement searchResult;
+
+    @FindBy(css = ".sb-searchbox__title-text")
+    private WebElement titleFindYourNextStay;
 
     public StaysPage checkStaysButtonIsSelected() {
         System.out.println("Stays button is selected: " + staysButtonSelected.isDisplayed());
@@ -146,5 +166,70 @@ public class StaysPage extends BasePage {
         return this;
     }
 
+public StaysPage clickOnGuestsToggle(){
+        guestsToggle.click();
+        return this;
+}
+
+public StaysPage checkGuestsInputsContainerIsDisplayed(){
+        System.out.println("Guests inputs container is displayed: " + guestsInputsContainer.isDisplayed());
+        softAssert.assertTrue(guestsInputsContainer.isDisplayed());
+        return this;
+}
+
+public StaysPage addOneAdult(){
+    addButton.get(0).click();
+        return this;
+}
+
+    public StaysPage addOneRoom(){
+        addButton.get(2).click();
+        return this;
+    }
+
+    public StaysPage checkAdultsCountAfterChanges(){
+        System.out.println("Adults count after changes: " + adultsCount.getText());
+        softAssert.assertEquals(adultsCount.getText(), "3 взрослых");
+        return this;
+    }
+
+    public StaysPage checkChildrenCountAfterChanges(){
+        System.out.println("Children count after changes: " + childrenCount.getText());
+        softAssert.assertEquals(childrenCount.getText(), "без детей");
+        return this;
+    }
+
+    public StaysPage checkRoomCountAfterChanges(){
+        System.out.println("Room count after changes: " + roomCount.getText());
+        softAssert.assertEquals(roomCount.getText(), "2 номера");
+        return this;
+    }
+
+    public StaysPage checkPricesButtonIsEnabled(){
+        System.out.println("Prices button is enabled: " + checkPricesButton.isEnabled());
+        softAssert.assertTrue(checkPricesButton.isEnabled());
+        return this;
+    }
+
+    public StaysPage clickOnPricesButton(){
+        checkPricesButton.click();
+        System.out.println(driver.getCurrentUrl());
+        return this;
+    }
+
+    public StaysPage checkSearchResult(){
+        String result = searchResult.getText();
+        String destinationName = result.substring(0,8);
+        System.out.println(destinationName);
+        softAssert.assertEquals(destinationName, "Буковель");
+        softAssert.assertAll();
+        return this;
+    }
+
+    public StaysPage checkTitleFindYourNextStayInEng(){
+        System.out.println(titleFindYourNextStay.getText());
+        softAssert.assertEquals(titleFindYourNextStay.getText(), "Find your next stay");
+        return this;
+    }
 
 }

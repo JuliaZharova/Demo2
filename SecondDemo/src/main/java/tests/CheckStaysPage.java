@@ -11,7 +11,7 @@ import static PageObject.BasePage.driver;
 public class CheckStaysPage {
 
     @Test
-    public void checksChoosingStaysOnStaysPage() throws InterruptedException {
+    public void checksChoosingStaysOnStaysPage() {
         WebDriverManager.chromedriver().setup();
         new BasePage(new ChromeDriver()).openBooking()
                 .checkStaysButtonIsDisplayed()
@@ -31,8 +31,17 @@ public class CheckStaysPage {
                 .checkChosenCheckOutDate()
                 .checkAdultsCountBeforeChanges()
                 .checkChildrenCountBeforeChanges()
-                .checkRoomCountBeforeChanges();
-
+                .checkRoomCountBeforeChanges()
+                .clickOnGuestsToggle()
+                .checkGuestsInputsContainerIsDisplayed()
+                .addOneAdult()
+                .addOneRoom()
+                .checkAdultsCountAfterChanges()
+                .checkChildrenCountAfterChanges()
+                .checkRoomCountAfterChanges()
+                .checkPricesButtonIsEnabled()
+                .clickOnPricesButton()
+                .checkSearchResult();
 
     }
 
