@@ -32,7 +32,7 @@ public class StaysPage extends BasePage {
     @FindBy(css = "[data-date=\"2022-02-14\"]")
     private WebElement dateForCheckin;
 
-    @FindBy(css = "[data-date=\"2022-02-20\"]")
+    @FindBy(css = "[data-date=\"2022-02-15\"]")
     private WebElement dateForCheckout;
 
     @FindBy(css = "[data-placeholder=\"Заезд\" ]")
@@ -83,6 +83,11 @@ public class StaysPage extends BasePage {
     public StaysPage enterDestination() {
     inputFieldDestination.sendKeys("Буковель");
     return this;
+    }
+
+    public StaysResultsPage checkEnteredDestination(){
+        System.out.println(inputFieldDestination.getText());
+        return new StaysResultsPage(driver);
     }
 
         public StaysPage checkDatesCheckInButtonIsEnabled(){
@@ -144,7 +149,7 @@ public class StaysPage extends BasePage {
 
     public StaysPage checkChosenCheckOutDate(){
         System.out.println(chosenDateCheckOut.getText());
-        softAssert.assertEquals(chosenDateCheckOut.getText(), "вс, 20 февр.");
+        softAssert.assertEquals(chosenDateCheckOut.getText(), "вт, 15 февр.");
         return this;
     }
 
@@ -166,18 +171,18 @@ public class StaysPage extends BasePage {
         return this;
     }
 
-public StaysPage clickOnGuestsToggle(){
+    public StaysPage clickOnGuestsToggle(){
         guestsToggle.click();
         return this;
 }
 
-public StaysPage checkGuestsInputsContainerIsDisplayed(){
+    public StaysPage checkGuestsInputsContainerIsDisplayed(){
         System.out.println("Guests inputs container is displayed: " + guestsInputsContainer.isDisplayed());
         softAssert.assertTrue(guestsInputsContainer.isDisplayed());
         return this;
 }
 
-public StaysPage addOneAdult(){
+    public StaysPage addOneAdult(){
     addButton.get(0).click();
         return this;
 }
@@ -217,13 +222,13 @@ public StaysPage addOneAdult(){
         return this;
     }
 
-    public StaysPage checkSearchResult(){
+    public StaysResultsPage checkSearchResult(){
         String result = searchResult.getText();
-        String destinationName = result.substring(0,8);
+        String destinationName = result.substring(0, 8);
         System.out.println(destinationName);
         softAssert.assertEquals(destinationName, "Буковель");
         softAssert.assertAll();
-        return this;
+        return new StaysResultsPage(driver);
     }
 
     public StaysPage checkTitleFindYourNextStayInEng(){
@@ -232,4 +237,8 @@ public StaysPage addOneAdult(){
         return this;
     }
 
+    public CarRentalsPage openCareRentalPage(){
+        menuTabs.get(2).click();
+        return new CarRentalsPage(driver);
+    }
 }

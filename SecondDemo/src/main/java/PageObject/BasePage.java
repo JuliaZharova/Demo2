@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BasePage {
@@ -43,12 +44,16 @@ public class BasePage {
     @FindBy(xpath = "//div[@lang=\"en-us\"]")
     private WebElement englishLanguageButton;
 
+    @FindBy(css = ".bui-tab__link")
+    List<WebElement> menuTabs;
+
     SoftAssert softAssert = new SoftAssert();
-   public BasePage openBooking(){
-       driver.get("https://www.booking.com/");
-       System.out.println(driver.getCurrentUrl());
-       return this;
-   }
+
+    public BasePage openBooking() {
+        driver.get("https://www.booking.com/");
+        System.out.println(driver.getCurrentUrl());
+        return this;
+    }
 
     public BasePage checkBookingComLogoIsDisplayed() {
         System.out.println("Booking.com button is enabled: " + bookingComLogo.isEnabled());
@@ -62,33 +67,33 @@ public class BasePage {
     }
 
     public BasePage clickOnLanguageSelectionButton() {
-       languageSelection.click();
-       return this;
+        languageSelection.click();
+        return this;
     }
 
-    public BasePage checkLanguagePopUpIsDisplayed(){
-       System.out.println("Language popup is displayed: " + languagePopUp.isDisplayed());
-       softAssert.assertTrue(languagePopUp.isDisplayed());
-       return this;
+    public BasePage checkLanguagePopUpIsDisplayed() {
+        System.out.println("Language popup is displayed: " + languagePopUp.isDisplayed());
+        softAssert.assertTrue(languagePopUp.isDisplayed());
+        return this;
     }
 
-    public BasePage checkEnglishLanguageButtonIsEnabled(){
-       System.out.println("English language button is enabled: " + englishLanguageButton.isEnabled());
-       softAssert.assertTrue(englishLanguageButton.isEnabled());
-       return this;
+    public BasePage checkEnglishLanguageButtonIsEnabled() {
+        System.out.println("English language button is enabled: " + englishLanguageButton.isEnabled());
+        softAssert.assertTrue(englishLanguageButton.isEnabled());
+        return this;
     }
 
-    public BasePage clickOnEnglishLanguageButton(){
+    public BasePage clickOnEnglishLanguageButton() {
         englishLanguageButton.click();
-       return this;
+        return this;
     }
 
-    public StaysPage checkLanguagePopUpIsNotDisplayed(){
-       try {
-           softAssert.assertFalse(languagePopUp.isDisplayed());
-       } catch (NoSuchElementException e){
-           System.out.println("Everything is fine. Language popup isn't displayed.");
-       }
+    public StaysPage checkLanguagePopUpIsNotDisplayed() {
+        try {
+            softAssert.assertFalse(languagePopUp.isDisplayed());
+        } catch (NoSuchElementException e) {
+            System.out.println("Everything is fine. Language popup isn't displayed.");
+        }
         softAssert.assertAll();
         return new StaysPage(driver);
     }

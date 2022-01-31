@@ -10,7 +10,7 @@ import static PageObject.BasePage.driver;
 
 public class CheckStaysPage {
 
-    @Test
+    @Test(groups = "smoke")
     public void checksChoosingStaysOnStaysPage() {
         WebDriverManager.chromedriver().setup();
         new BasePage(new ChromeDriver()).openBooking()
@@ -42,10 +42,9 @@ public class CheckStaysPage {
                 .checkPricesButtonIsEnabled()
                 .clickOnPricesButton()
                 .checkSearchResult();
-
     }
 
-//    @AfterMethod
+    @AfterMethod
     public void setDown() {
         driver.quit();
     }
