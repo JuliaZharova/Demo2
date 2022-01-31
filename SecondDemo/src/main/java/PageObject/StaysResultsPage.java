@@ -36,6 +36,12 @@ public class StaysResultsPage extends BasePage{
     @FindBy(xpath = "//li[@data-id=\"popularity\"]")
     private WebElement popularityButton;
 
+    @FindBy(xpath = "//a[@data-type=\"upsort_bh\"]")
+    private WebElement housesAndApartmentsFirstButton;
+
+    @FindBy(xpath = "//a[@data-type=\"price\"]")
+    private WebElement fromLowPriceButton;
+
     public StaysResultsPage checkFilterPopupIsDisplayed(){
         System.out.println("Filter popup is displayed: " + filterPopup.isDisplayed());
         softAssert.assertTrue(filterPopup.isDisplayed());
@@ -73,11 +79,21 @@ public StaysResultsPage checkCheckBoxForPriceFilterLess2000IsEnabled(){
     }
 
     public StaysResultsPage checkPopularityButtonIsDisplayed(){
-        System.out.println("Popularity button is displayed: " + popularityButton.isDisplayed());
+        System.out.println("'Popularity' button is displayed: " + popularityButton.isDisplayed());
         return this;
     }
 
-    public StaysResultsPage checkPrice() throws InterruptedException {
+    public StaysResultsPage checkHousesAndApartmentsFirstButtonIsDisplayed(){
+        System.out.println("'Houses and apartments first' button is displayed: " + housesAndApartmentsFirstButton.isDisplayed());
+        return this;
+    }
+
+    public StaysResultsPage checkFromLowPriceButtonIsDisplayed(){
+        System.out.println("'From low price' button is displayed: " + fromLowPriceButton.isDisplayed());
+        return this;
+    }
+
+    public StaysResultsPage checkPrice(){
         try {
           for (WebElement p : price) {
               String q = p.getText();
@@ -85,12 +101,16 @@ public StaysResultsPage checkCheckBoxForPriceFilterLess2000IsEnabled(){
                   String sub = q.substring(13);
                   System.out.println(sub);
                   if (sub.length()>4) {
-                      char expected = '1';
+                      char expected;
+                      if (sub.charAt(0)=='1') {
+                          expected = '1';
+                      } else {
+                          expected = '2';
+                      }
                       softAssert.assertEquals(sub.charAt(0), expected);
-                      softAssert.assertAll();
                   }
-              }
-              else System.out.println(q.substring(4));
+              } else System.out.println(q.substring(4));
+              softAssert.assertAll();
           }
       } catch (StaleElementReferenceException e) {
           System.out.println("StaleElementReferenceException caught.");

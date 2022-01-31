@@ -11,7 +11,7 @@ import static PageObject.BasePage.driver;
 public class CheckStaysResultPage {
 
     @Test(groups = "regression")
-    public void checkFilterPriceLess2000() throws InterruptedException {
+    public void checkFilterPriceLess2000() {
         WebDriverManager.chromedriver().setup();
         new BasePage(new ChromeDriver()).openBooking()
                 .checkStaysButtonIsDisplayed()
@@ -29,12 +29,14 @@ public class CheckStaysResultPage {
                 .clickOnCheckBoxForPriceFilterLess2000()
                 .checkEnteredDestination()
                 .checkPopularityButtonIsDisplayed()
+                .checkHousesAndApartmentsFirstButtonIsDisplayed()
+                .checkFromLowPriceButtonIsDisplayed()
                 .checkTitleResultAfterFiltering()
                 .clickOnCloseButton()
                 .checkPrice();
     }
 
-    @AfterMethod
+   @AfterMethod
     public void setDown() {
         driver.quit();
     }
