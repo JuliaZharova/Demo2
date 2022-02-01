@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="F:/Demo2/Demo2/SecondDemo">
+        <classes>
+            <class name="tests.CheckForLanguageChange">
+                <methods>
+                    <include name="checksChoosingStaysOnStaysPage"/>
+                </methods>
+            </class>
+            <class name="tests.CheckStaysPage">
+                <methods>
+                    <include name="checksChoosingStaysOnStaysPage"/>
+                </methods>
+            </class>
+            <class name="tests.CheckStaysResultPage">
+                <methods>
+                    <include name="checkFilterPriceLess2000"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
