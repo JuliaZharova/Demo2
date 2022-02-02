@@ -12,6 +12,12 @@
           <include name="setDown"/>
         </methods>
       </class> <!-- tests.CheckForLanguageChange -->
+      <class name="tests.CheckStaysResultPage">
+        <methods>
+          <include name="checkFilterPriceLess2000"/>
+          <include name="setDown"/>
+        </methods>
+      </class> <!-- tests.CheckStaysResultPage -->
     </classes>
   </test> <!-- F:/Demo2/Demo2/SecondDemo(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

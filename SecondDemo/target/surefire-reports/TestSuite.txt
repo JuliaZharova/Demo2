@@ -1,10 +1,23 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 54.979 s <<< FAILURE! - in TestSuite
-tests.CheckForLanguageChange.checksForLanguageChanges  Time elapsed: 30.503 s  <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 96.956 s <<< FAILURE! - in TestSuite
+tests.CheckForLanguageChange.checksForLanguageChanges  Time elapsed: 39.642 s  <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
 	The wrong language is displayed on the page Flights expected [Compare and book flights with ease] but found [Порівнюйте і бронюйте перельоти з легкістю]
 	at tests.CheckForLanguageChange.checksForLanguageChanges(CheckForLanguageChange.java:35)
+
+tests.CheckStaysResultPage.checkFilterPriceLess2000  Time elapsed: 30.739 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-testid="overlay-card"]"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-HCHNUOI', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_322'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f723730e431a4986e195a6a70c2b1330, findElement {using=xpath, value=//div[@data-testid="overlay-card"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54754}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54754/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f723730e431a4986e195a6a70c2b1330
+	at tests.CheckStaysResultPage.checkFilterPriceLess2000(CheckStaysResultPage.java:33)
 
