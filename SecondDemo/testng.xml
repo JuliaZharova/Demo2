@@ -8,12 +8,12 @@
         <classes>
             <class name="tests.CheckForLanguageChange">
                 <methods>
-                    <include name="checksChoosingStaysOnStaysPage"/>
+                    <include name="checksForLanguageChanges"/>
                 </methods>
             </class>
             <class name="tests.CheckStaysPage">
                 <methods>
-                    <include name="checksChoosingStaysOnStaysPage"/>
+                    <include name="checkChoosingStaysOnStaysPage"/>
                 </methods>
             </class>
             <class name="tests.CheckStaysResultPage">

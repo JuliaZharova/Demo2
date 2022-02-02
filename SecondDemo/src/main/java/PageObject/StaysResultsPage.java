@@ -44,6 +44,9 @@ public class StaysResultsPage extends BasePage {
     @FindBy(xpath = "//a[@data-type=\"price\"]")
     private WebElement fromLowPriceButton;
 
+    @FindBy(xpath = "//div[@data-testid=\"overlay-card\"]")
+    private WebElement overlayCard;
+
     @Step("Check that filter popup is displayed")
     public StaysResultsPage checkFilterPopupIsDisplayed() {
         System.out.println("Filter popup is displayed: " + filterPopup.isDisplayed());
@@ -75,6 +78,13 @@ public class StaysResultsPage extends BasePage {
         }
         driver.getPageSource();
         return new StaysPage(driver);
+    }
+
+    @Step("Check that overlay card is displayed")
+    public StaysResultsPage checkOverlayCardIsDisplayed(){
+        System.out.println("Overlay card is displayed:" + overlayCard.isDisplayed());
+        System.out.println(overlayCard.getText());
+        return this;
     }
 
     @Step("Check that the name of the destination match the entered")
