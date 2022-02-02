@@ -2,14 +2,14 @@ package tests;
 
 import PageObject.BasePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import static PageObject.BasePage.driver;
 
-public class CheckForLanguageChange {
-
+public class CheckForLanguageChange{
 
     @Test(groups = "regression")
     public void checksChoosingStaysOnStaysPage() {
@@ -30,7 +30,6 @@ public class CheckForLanguageChange {
                 .checkTitleBookYourAirportTaxi()
                 .openFlightsPage()
                 .checkTitleCompareAndBookFlightsWithEaseInEng();
-
     }
 
     @AfterMethod

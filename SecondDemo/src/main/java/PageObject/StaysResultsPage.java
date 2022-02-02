@@ -44,24 +44,25 @@ public class StaysResultsPage extends BasePage{
 
     public StaysResultsPage checkFilterPopupIsDisplayed(){
         System.out.println("Filter popup is displayed: " + filterPopup.isDisplayed());
-        softAssert.assertTrue(filterPopup.isDisplayed());
+        softAssert.assertTrue(filterPopup.isDisplayed(), "Filter popup isn't displayed!");
         return this;
     }
 
     public StaysResultsPage checkPriceFilterLess2000IsDisplayed(){
         System.out.println("Price filter 'Less2000' is displayed: " + priceFilterLess2000.isDisplayed());
-        softAssert.assertTrue(priceFilterLess2000.isDisplayed());
+        softAssert.assertTrue(priceFilterLess2000.isDisplayed(), "Price filter 'Less2000' isn't displayed!");
         return this;
     }
 
 public StaysResultsPage checkCheckBoxForPriceFilterLess2000IsEnabled(){
         System.out.println("Checkbox for price filter 'Less 2000' is enabled: " + checkBoxForPriceFilterLess2000.isEnabled());
-        softAssert.assertTrue(checkBoxForPriceFilterLess2000.isEnabled());
+        softAssert.assertTrue(checkBoxForPriceFilterLess2000.isEnabled(), "Checkbox for price filter 'Less 2000' isn't enabled!");
         return this;
 }
 
     public StaysPage clickOnCheckBoxForPriceFilterLess2000(){
        checkBoxForPriceFilterLess2000.click();
+       driver.getPageSource();
        return new StaysPage(driver);
     }
 
@@ -69,7 +70,7 @@ public StaysResultsPage checkCheckBoxForPriceFilterLess2000IsEnabled(){
         String result = titleResultAfterFiltering.getText();
         String destinationName = result.substring(0,8);
         System.out.println(destinationName);
-        softAssert.assertEquals(destinationName, "Буковель");
+        softAssert.assertEquals(destinationName, "Буковель", "The name of the destination does not match the entered!");
         return this;
     }
 
@@ -80,16 +81,19 @@ public StaysResultsPage checkCheckBoxForPriceFilterLess2000IsEnabled(){
 
     public StaysResultsPage checkPopularityButtonIsDisplayed(){
         System.out.println("'Popularity' button is displayed: " + popularityButton.isDisplayed());
+        softAssert.assertTrue(popularityButton.isDisplayed(), "'Popularity' button isn't displayed!");
         return this;
     }
 
     public StaysResultsPage checkHousesAndApartmentsFirstButtonIsDisplayed(){
         System.out.println("'Houses and apartments first' button is displayed: " + housesAndApartmentsFirstButton.isDisplayed());
+        softAssert.assertTrue(housesAndApartmentsFirstButton.isDisplayed(), "'Houses and apartments first' button isn't displayed!");
         return this;
     }
 
     public StaysResultsPage checkFromLowPriceButtonIsDisplayed(){
         System.out.println("'From low price' button is displayed: " + fromLowPriceButton.isDisplayed());
+        softAssert.assertTrue(fromLowPriceButton.isDisplayed(), "'From low price' button isn't displayed!");
         return this;
     }
 
@@ -107,7 +111,7 @@ public StaysResultsPage checkCheckBoxForPriceFilterLess2000IsEnabled(){
                       } else {
                           expected = '2';
                       }
-                      softAssert.assertEquals(sub.charAt(0), expected);
+                      softAssert.assertEquals(sub.charAt(0), expected, "The price is more than 2000 UAH!");
                   }
               } else System.out.println(q.substring(4));
               softAssert.assertAll();

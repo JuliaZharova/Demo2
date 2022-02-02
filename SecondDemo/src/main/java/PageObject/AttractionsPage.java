@@ -22,7 +22,8 @@ public class AttractionsPage extends BasePage {
 
     public AttractionsPage checkTitleFindAndBookAGreatExperience() {
         System.out.println(titleFindAndBookAGreatExperience.getText());
-        softAssert.assertEquals(titleFindAndBookAGreatExperience.getText(), "Find and book a great experience");
+        softAssert.assertEquals(titleFindAndBookAGreatExperience.getText(), "Find and book a great experience",
+                "The wrong language is displayed on the Attractions page!");
         return this;
     }
 
