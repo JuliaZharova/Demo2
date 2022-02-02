@@ -2,6 +2,8 @@ package tests;
 
 import PageObject.BasePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -11,8 +13,9 @@ import static PageObject.BasePage.driver;
 
 public class CheckForLanguageChange{
 
-    @Test(groups = "regression")
-    public void checksChoosingStaysOnStaysPage() {
+    @Test(groups = "regression",
+    description = "Check that all pages are in the same language")
+    public void checksForLanguageChanges() {
         WebDriverManager.chromedriver().setup();
         new BasePage(new ChromeDriver()).openBooking()
                 .checkLanguageSelectionButtonIsEnabled()
@@ -32,7 +35,7 @@ public class CheckForLanguageChange{
                 .checkTitleCompareAndBookFlightsWithEaseInEng();
     }
 
-    @AfterMethod
+    @AfterMethod(description = "Quit driver")
     public void setDown() {
         driver.quit();
     }

@@ -1,6 +1,7 @@
 package listener;
 
 import PageObject.BasePage;
+import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestListener;
@@ -11,7 +12,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class ClassForListener implements ITestListener {
-
+    @Attachment
     @Override
     public void onTestFailure(ITestResult result) {
         TakesScreenshot scr = ((TakesScreenshot) BasePage.driver);

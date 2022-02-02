@@ -11,7 +11,8 @@ import static PageObject.BasePage.driver;
 
 public class CheckStaysResultPage{
 
-    @Test(groups = "regression")
+    @Test(groups = "regression",
+    description = "Check the filter 'Price is less than or equal to 2000'")
     public void checkFilterPriceLess2000() {
         WebDriverManager.chromedriver().setup();
         new BasePage(new ChromeDriver()).openBooking()
@@ -37,7 +38,7 @@ public class CheckStaysResultPage{
                 .checkPrice();
     }
 
-    @AfterMethod
+    @AfterMethod(description = "Quit driver")
     public void setDown() {
         driver.quit();
     }
