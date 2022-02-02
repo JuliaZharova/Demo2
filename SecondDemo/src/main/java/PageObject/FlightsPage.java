@@ -17,7 +17,8 @@ public class FlightsPage extends BasePage{
 
     public FlightsPage checkTitleCompareAndBookFlightsWithEaseInEng(){
         System.out.println(titleCompareAndBookFlightsWithEase.getText());
-        softAssert.assertEquals(titleCompareAndBookFlightsWithEase.getText(), "Compare and book flights with ease", "The wrong language is displayed on the page Flights");
+        softAssert.assertEquals(titleCompareAndBookFlightsWithEase.getText(), "Compare and book flights with ease",
+                "The wrong language is displayed on the page Flights");
         softAssert.assertAll();
         return this;
     }

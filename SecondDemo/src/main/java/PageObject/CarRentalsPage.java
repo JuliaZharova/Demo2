@@ -17,7 +17,8 @@ public class CarRentalsPage extends BasePage{
 
     public CarRentalsPage checkTitleCarRentalsForAnyKindOfTripInEng(){
         System.out.println(titleCarRentalsForAnyKindOfTrip.getText());
-        softAssert.assertEquals(titleCarRentalsForAnyKindOfTrip.getText(), "Car rentals for any kind of trip");
+        softAssert.assertEquals(titleCarRentalsForAnyKindOfTrip.getText(), "Car rentals for any kind of trip",
+                "The wrong language is displayed on the Car rental page");
         return this;
     }
 

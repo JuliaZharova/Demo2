@@ -2,13 +2,14 @@ package tests;
 
 import PageObject.BasePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import static PageObject.BasePage.driver;
 
-public class CheckStaysResultPage {
+public class CheckStaysResultPage{
 
     @Test(groups = "regression")
     public void checkFilterPriceLess2000() {
@@ -36,7 +37,7 @@ public class CheckStaysResultPage {
                 .checkPrice();
     }
 
-   @AfterMethod
+    @AfterMethod
     public void setDown() {
         driver.quit();
     }

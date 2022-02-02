@@ -21,6 +21,11 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    @AfterMethod
+    public void setDown() {
+        driver.quit();
+    }
+
     @FindBy(xpath = "//div[@class=\"bui-header__main\"]")
     private WebElement bookingComLogo;
 
@@ -58,12 +63,13 @@ public class BasePage {
 
     public BasePage checkBookingComLogoIsDisplayed() {
         System.out.println("Booking.com button is enabled: " + bookingComLogo.isEnabled());
+        softAssert.assertTrue(bookingComLogo.isEnabled(), "Booking.com button isn't enabled!");
         return this;
     }
 
     public BasePage checkLanguageSelectionButtonIsEnabled() {
         System.out.println("Language button is enabled: " + languageSelection.isEnabled());
-        softAssert.assertTrue(languageSelection.isEnabled());
+        softAssert.assertTrue(languageSelection.isEnabled(), "Language button isn't enabled!");
         return this;
     }
 
@@ -74,13 +80,13 @@ public class BasePage {
 
     public BasePage checkLanguagePopUpIsDisplayed() {
         System.out.println("Language popup is displayed: " + languagePopUp.isDisplayed());
-        softAssert.assertTrue(languagePopUp.isDisplayed());
+        softAssert.assertTrue(languagePopUp.isDisplayed(), "Language popup isn't displayed!");
         return this;
     }
 
     public BasePage checkEnglishLanguageButtonIsEnabled() {
         System.out.println("English language button is enabled: " + englishLanguageButton.isEnabled());
-        softAssert.assertTrue(englishLanguageButton.isEnabled());
+        softAssert.assertTrue(englishLanguageButton.isEnabled(), "English language button isn't enabled!");
         return this;
     }
 
@@ -101,22 +107,25 @@ public class BasePage {
 
     public BasePage checkQuestionMarkButtonIsEnabled() {
         System.out.println("Question mark button is enabled: " + questionMarkButton.isEnabled());
+        softAssert.assertTrue(questionMarkButton.isEnabled(), "Question mark button isn't enabled!");
         return this;
     }
 
     public BasePage checkLoginButtonIsDisplayed() {
         System.out.println("Login button is enabled: " + loginButton.isEnabled());
+        softAssert.assertTrue(loginButton.isEnabled(), "Login button isn't enabled!");
         return this;
     }
 
     public BasePage checkRegisterButtonIsDisplayed() {
         System.out.println("Register button is enabled: " + registerButton.isEnabled());
+        softAssert.assertTrue(registerButton.isEnabled(), "Register button isn't enabled!");
         return this;
     }
 
     public StaysPage checkStaysButtonIsDisplayed() {
         System.out.println("Stays button is enabled: " + staysButton.isEnabled());
-        softAssert.assertTrue(staysButton.isEnabled());
+        softAssert.assertTrue(staysButton.isEnabled(), "Stays button isn't enabled!");
         return new StaysPage(driver);
     }
 }

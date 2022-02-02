@@ -70,13 +70,13 @@ public class StaysPage extends BasePage {
 
     public StaysPage checkStaysButtonIsSelected() {
         System.out.println("Stays button is selected: " + staysButtonSelected.isDisplayed());
-        softAssert.assertTrue(staysButtonSelected.isDisplayed());
+        softAssert.assertTrue(staysButtonSelected.isDisplayed(), "Stays button isn't selected!");
         return this;
     }
 
     public StaysPage checkInputFieldDestinationIsEnabled(){
         System.out.println("Input field 'Destination' is enabled: " + inputFieldDestination.isEnabled());
-        softAssert.assertTrue(inputFieldDestination.isEnabled());
+        softAssert.assertTrue(inputFieldDestination.isEnabled(), "Input field 'Destination' isn't enabled!");
         return this;
     }
 
@@ -91,8 +91,8 @@ public class StaysPage extends BasePage {
     }
 
         public StaysPage checkDatesCheckInButtonIsEnabled(){
-        System.out.println("Dates checkin button is enabled: " + datesCheckinButton.isEnabled());
-        softAssert.assertTrue(datesCheckinButton.isEnabled());
+        System.out.println("Dates check-in button is enabled: " + datesCheckinButton.isEnabled());
+        softAssert.assertTrue(datesCheckinButton.isEnabled(), "Dates check-in button isn't enabled!");
         return this;
 }
 
@@ -103,7 +103,7 @@ public class StaysPage extends BasePage {
 
     public StaysPage checkCalendarIsDisplayed(){
         System.out.println("Calendar is displayed: " + calendar.isDisplayed());
-        softAssert.assertTrue(calendar.isDisplayed());
+        softAssert.assertTrue(calendar.isDisplayed(), "Calendar isn't displayed!");
         return this;
     }
 
@@ -114,13 +114,15 @@ public class StaysPage extends BasePage {
 
     public StaysPage checkDateCheckInIsChosen(){
         System.out.println(dateForCheckin.getCssValue("background"));
-        softAssert.assertEquals(dateForCheckin.getCssValue("background"), "rgb(0, 113, 194) none repeat scroll 0% 0% / auto padding-box border-box");
+        softAssert.assertEquals(dateForCheckin.getCssValue("background"),
+                "rgb(0, 113, 194) none repeat scroll 0% 0% / auto padding-box border-box",
+                "The date check-in has not been chosen!");
         return this;
     }
 
     public StaysPage checkDatesCheckOutButtonIsEnabled(){
         System.out.println("Dates checkout button is enabled: " + datesCheckoutButton.isEnabled());
-        softAssert.assertTrue(datesCheckoutButton.isEnabled());
+        softAssert.assertTrue(datesCheckoutButton.isEnabled(), "Dates checkout button isn't enabled!");
         return this;
     }
 
@@ -131,43 +133,50 @@ public class StaysPage extends BasePage {
 
     public StaysPage checkDateCheckOutIsChosen(){
         System.out.println(dateForCheckout.getCssValue("background"));
-        softAssert.assertEquals(dateForCheckout.getCssValue("background"), "rgb(0, 113, 194) none repeat scroll 0% 0% / auto padding-box border-box");
+        softAssert.assertEquals(dateForCheckout.getCssValue("background"),
+                "rgb(0, 113, 194) none repeat scroll 0% 0% / auto padding-box border-box",
+                "The date checkout has not been chosen!" );
         return this;
     }
 
     public StaysPage checkCalendarIsNotDisplayed(){
         System.out.println("Calendar is displayed: " + calendar.isDisplayed());
-        softAssert.assertFalse(calendar.isDisplayed());
+        softAssert.assertFalse(calendar.isDisplayed(), "Calendar isn't displayed!");
         return this;
     }
 
     public StaysPage checkChosenCheckInDate(){
         System.out.println(chosenDateCheckIn.getText());
-        softAssert.assertEquals(chosenDateCheckIn.getText(), "пн, 14 февр.");
+        softAssert.assertEquals(chosenDateCheckIn.getText(), "пн, 14 февр.",
+                "Wrong check-in date!");
         return this;
     }
 
     public StaysPage checkChosenCheckOutDate(){
         System.out.println(chosenDateCheckOut.getText());
-        softAssert.assertEquals(chosenDateCheckOut.getText(), "вт, 15 февр.");
+        softAssert.assertEquals(chosenDateCheckOut.getText(), "вт, 15 февр.",
+                "Wrong checkout date!");
         return this;
     }
 
     public StaysPage checkAdultsCountBeforeChanges(){
        System.out.println("Adults count before changes: " + adultsCount.getText());
-       softAssert.assertEquals(adultsCount.getText(), "2 взрослых");
+       softAssert.assertEquals(adultsCount.getText(), "2 взрослых",
+               "Wrong adults count before changes!");
         return this;
 }
 
     public StaysPage checkChildrenCountBeforeChanges(){
         System.out.println("Children count before changes: " + childrenCount.getText());
-        softAssert.assertEquals(childrenCount.getText(), "без детей");
+        softAssert.assertEquals(childrenCount.getText(), "без детей",
+                "Wrong children count before changes!");
         return this;
     }
 
     public StaysPage checkRoomCountBeforeChanges(){
         System.out.println("Room count before changes: " + roomCount.getText());
-        softAssert.assertEquals(roomCount.getText(), "1 номер");
+        softAssert.assertEquals(roomCount.getText(), "1 номер",
+                "Wrong room count before changes!");
         return this;
     }
 
@@ -178,7 +187,7 @@ public class StaysPage extends BasePage {
 
     public StaysPage checkGuestsInputsContainerIsDisplayed(){
         System.out.println("Guests inputs container is displayed: " + guestsInputsContainer.isDisplayed());
-        softAssert.assertTrue(guestsInputsContainer.isDisplayed());
+        softAssert.assertTrue(guestsInputsContainer.isDisplayed(), "Guests inputs container isn't displayed!");
         return this;
 }
 
@@ -194,25 +203,28 @@ public class StaysPage extends BasePage {
 
     public StaysPage checkAdultsCountAfterChanges(){
         System.out.println("Adults count after changes: " + adultsCount.getText());
-        softAssert.assertEquals(adultsCount.getText(), "3 взрослых");
+        softAssert.assertEquals(adultsCount.getText(), "3 взрослых",
+                "Wrong adults count after changes!");
         return this;
     }
 
     public StaysPage checkChildrenCountAfterChanges(){
         System.out.println("Children count after changes: " + childrenCount.getText());
-        softAssert.assertEquals(childrenCount.getText(), "без детей");
+        softAssert.assertEquals(childrenCount.getText(), "без детей",
+                "Wrong children count after changes!");
         return this;
     }
 
     public StaysPage checkRoomCountAfterChanges(){
         System.out.println("Room count after changes: " + roomCount.getText());
-        softAssert.assertEquals(roomCount.getText(), "2 номера");
+        softAssert.assertEquals(roomCount.getText(), "2 номера",
+                "Wrong room count after changes!");
         return this;
     }
 
     public StaysPage checkPricesButtonIsEnabled(){
         System.out.println("Prices button is enabled: " + checkPricesButton.isEnabled());
-        softAssert.assertTrue(checkPricesButton.isEnabled());
+        softAssert.assertTrue(checkPricesButton.isEnabled(),"Prices button isn't enabled!");
         return this;
     }
 
@@ -226,14 +238,14 @@ public class StaysPage extends BasePage {
         String result = searchResult.getText();
         String destinationName = result.substring(0, 8);
         System.out.println(destinationName);
-        softAssert.assertEquals(destinationName, "Буковель");
+        softAssert.assertEquals(destinationName, "Буковель", "The name of the destination item is not what is entered!");
         softAssert.assertAll();
         return new StaysResultsPage(driver);
     }
 
     public StaysPage checkTitleFindYourNextStayInEng(){
         System.out.println(titleFindYourNextStay.getText());
-        softAssert.assertEquals(titleFindYourNextStay.getText(), "Find your next stay");
+        softAssert.assertEquals(titleFindYourNextStay.getText(), "Find your next stay", "Title 'Find your next stay' is not in English!");
         return this;
     }
 

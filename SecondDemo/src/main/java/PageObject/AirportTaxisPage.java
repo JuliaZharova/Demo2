@@ -17,7 +17,8 @@ private WebElement titleBookYourAirportTaxi;
 
     public AirportTaxisPage checkTitleBookYourAirportTaxi(){
         System.out.println(titleBookYourAirportTaxi.getText());
-        softAssert.assertEquals(titleBookYourAirportTaxi.getText(), "Book your airport taxi");
+        softAssert.assertEquals(titleBookYourAirportTaxi.getText(), "Book your airport taxi",
+                "The wrong language is displayed on the Airport taxis page!");
         return this;
     }
 
