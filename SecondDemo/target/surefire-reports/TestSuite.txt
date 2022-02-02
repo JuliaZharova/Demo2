@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 84.488 s <<< FAILURE! - in TestSuite
-tests.CheckForLanguageChange.checksChoosingStaysOnStaysPage  Time elapsed: 42.176 s  <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 54.979 s <<< FAILURE! - in TestSuite
+tests.CheckForLanguageChange.checksForLanguageChanges  Time elapsed: 30.503 s  <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
 	The wrong language is displayed on the page Flights expected [Compare and book flights with ease] but found [Порівнюйте і бронюйте перельоти з легкістю]
-	at tests.CheckForLanguageChange.checksChoosingStaysOnStaysPage(CheckForLanguageChange.java:34)
+	at tests.CheckForLanguageChange.checksForLanguageChanges(CheckForLanguageChange.java:35)
 

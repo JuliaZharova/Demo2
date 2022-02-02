@@ -2,29 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="80638" started-at="2022-02-02T18:48:57 EET" finished-at="2022-02-02T18:50:18 EET">
+  <suite name="All Test Suite" duration-ms="52560" started-at="2022-02-02T22:36:22 EET" finished-at="2022-02-02T22:37:15 EET">
     <groups>
       <group name="regression">
-        <method signature="CheckForLanguageChange.checksChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckForLanguageChange@200a26bc]" name="checksChoosingStaysOnStaysPage" class="tests.CheckForLanguageChange"/>
-        <method signature="CheckStaysResultPage.checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@1b5bc39d]" name="checkFilterPriceLess2000" class="tests.CheckStaysResultPage"/>
+        <method signature="CheckForLanguageChange.checksForLanguageChanges()[pri:0, instance:tests.CheckForLanguageChange@5ef8df1e]" name="checksForLanguageChanges" class="tests.CheckForLanguageChange"/>
+        <method signature="CheckStaysResultPage.checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@127e70c5]" name="checkFilterPriceLess2000" class="tests.CheckStaysResultPage"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CheckStaysPage.checksChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@bc57b40]" name="checksChoosingStaysOnStaysPage" class="tests.CheckStaysPage"/>
+        <method signature="CheckStaysPage.checkChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@27cf3151]" name="checkChoosingStaysOnStaysPage" class="tests.CheckStaysPage"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="F:/Demo2/Demo2/SecondDemo" duration-ms="80638" started-at="2022-02-02T18:48:57 EET" finished-at="2022-02-02T18:50:18 EET">
-      <class name="tests.CheckStaysPage">
-        <test-method status="PASS" signature="checksChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@bc57b40]" name="checksChoosingStaysOnStaysPage" duration-ms="16722" started-at="2022-02-02T18:49:42 EET" finished-at="2022-02-02T18:49:58 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checksChoosingStaysOnStaysPage -->
-        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckStaysPage@bc57b40]" name="setDown" is-config="true" duration-ms="1257" started-at="2022-02-02T18:49:58 EET" finished-at="2022-02-02T18:50:00 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDown -->
-      </class> <!-- tests.CheckStaysPage -->
+    <test name="F:/Demo2/Demo2/SecondDemo" duration-ms="52560" started-at="2022-02-02T22:36:22 EET" finished-at="2022-02-02T22:37:15 EET">
       <class name="tests.CheckForLanguageChange">
-        <test-method status="FAIL" signature="checksChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckForLanguageChange@200a26bc]" name="checksChoosingStaysOnStaysPage" duration-ms="41855" started-at="2022-02-02T18:48:57 EET" finished-at="2022-02-02T18:49:39 EET">
+        <test-method status="FAIL" signature="checksForLanguageChanges()[pri:0, instance:tests.CheckForLanguageChange@5ef8df1e]" name="checksForLanguageChanges" duration-ms="30442" started-at="2022-02-02T22:36:22 EET" description="Check that all pages are in the same language" finished-at="2022-02-02T22:36:53 EET">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -36,7 +26,7 @@ The wrong language is displayed on the page Flights expected [Compare and book f
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
 at PageObject.FlightsPage.checkTitleCompareAndBookFlightsWithEaseInEng(FlightsPage.java:24)
-at tests.CheckForLanguageChange.checksChoosingStaysOnStaysPage(CheckForLanguageChange.java:34)
+at tests.CheckForLanguageChange.checksForLanguageChanges(CheckForLanguageChange.java:35)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,18 +64,28 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checksChoosingStaysOnStaysPage -->
-        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckForLanguageChange@200a26bc]" name="setDown" is-config="true" duration-ms="1121" started-at="2022-02-02T18:49:41 EET" finished-at="2022-02-02T18:49:42 EET">
+        </test-method> <!-- checksForLanguageChanges -->
+        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckForLanguageChange@5ef8df1e]" name="setDown" is-config="true" duration-ms="699" started-at="2022-02-02T22:36:53 EET" description="Quit driver" finished-at="2022-02-02T22:36:54 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDown -->
       </class> <!-- tests.CheckForLanguageChange -->
+      <class name="tests.CheckStaysPage">
+        <test-method status="PASS" signature="checkChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@27cf3151]" name="checkChoosingStaysOnStaysPage" duration-ms="8985" started-at="2022-02-02T22:36:54 EET" description="Check the possibility of choosing stays" finished-at="2022-02-02T22:37:03 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkChoosingStaysOnStaysPage -->
+        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckStaysPage@27cf3151]" name="setDown" is-config="true" duration-ms="692" started-at="2022-02-02T22:37:03 EET" description="Quit driver" finished-at="2022-02-02T22:37:04 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDown -->
+      </class> <!-- tests.CheckStaysPage -->
       <class name="tests.CheckStaysResultPage">
-        <test-method status="PASS" signature="checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@1b5bc39d]" name="checkFilterPriceLess2000" duration-ms="17125" started-at="2022-02-02T18:50:00 EET" finished-at="2022-02-02T18:50:17 EET">
+        <test-method status="PASS" signature="checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@127e70c5]" name="checkFilterPriceLess2000" duration-ms="10470" started-at="2022-02-02T22:37:04 EET" description="Check the filter &#039;Price is less than or equal to 2000&#039;" finished-at="2022-02-02T22:37:14 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFilterPriceLess2000 -->
-        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckStaysResultPage@1b5bc39d]" name="setDown" is-config="true" duration-ms="1110" started-at="2022-02-02T18:50:17 EET" finished-at="2022-02-02T18:50:18 EET">
+        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckStaysResultPage@127e70c5]" name="setDown" is-config="true" duration-ms="671" started-at="2022-02-02T22:37:14 EET" description="Quit driver" finished-at="2022-02-02T22:37:15 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDown -->

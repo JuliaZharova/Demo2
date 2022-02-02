@@ -30,6 +30,7 @@ public class CheckStaysResultPage{
                 .checkCheckBoxForPriceFilterLess2000IsEnabled()
                 .clickOnCheckBoxForPriceFilterLess2000()
                 .checkEnteredDestination()
+                .checkOverlayCardIsDisplayed()
                 .checkPopularityButtonIsDisplayed()
                 .checkHousesAndApartmentsFirstButtonIsDisplayed()
                 .checkFromLowPriceButtonIsDisplayed()
