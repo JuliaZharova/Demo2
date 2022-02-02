@@ -1,5 +1,6 @@
 package PageObject;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -55,6 +56,7 @@ public class BasePage {
 
     SoftAssert softAssert = new SoftAssert();
 
+    @Step("Open booking.com")
     public BasePage openBooking() {
         driver.get("https://www.booking.com/");
         System.out.println(driver.getCurrentUrl());
@@ -67,34 +69,40 @@ public class BasePage {
         return this;
     }
 
+    @Step("Check language selection button is enabled")
     public BasePage checkLanguageSelectionButtonIsEnabled() {
         System.out.println("Language button is enabled: " + languageSelection.isEnabled());
         softAssert.assertTrue(languageSelection.isEnabled(), "Language button isn't enabled!");
         return this;
     }
 
+    @Step("Click on language selection button")
     public BasePage clickOnLanguageSelectionButton() {
         languageSelection.click();
         return this;
     }
 
+    @Step("Check language popup is displayed")
     public BasePage checkLanguagePopUpIsDisplayed() {
         System.out.println("Language popup is displayed: " + languagePopUp.isDisplayed());
         softAssert.assertTrue(languagePopUp.isDisplayed(), "Language popup isn't displayed!");
         return this;
     }
 
+    @Step("Check English language button is enabled")
     public BasePage checkEnglishLanguageButtonIsEnabled() {
         System.out.println("English language button is enabled: " + englishLanguageButton.isEnabled());
         softAssert.assertTrue(englishLanguageButton.isEnabled(), "English language button isn't enabled!");
         return this;
     }
 
+    @Step("Click on English language button")
     public BasePage clickOnEnglishLanguageButton() {
         englishLanguageButton.click();
         return this;
     }
 
+    @Step("Check language popup isn't displayed")
     public StaysPage checkLanguagePopUpIsNotDisplayed() {
         try {
             softAssert.assertFalse(languagePopUp.isDisplayed());
@@ -123,6 +131,7 @@ public class BasePage {
         return this;
     }
 
+    @Step("Check stays button is enabled")
     public StaysPage checkStaysButtonIsDisplayed() {
         System.out.println("Stays button is enabled: " + staysButton.isEnabled());
         softAssert.assertTrue(staysButton.isEnabled(), "Stays button isn't enabled!");

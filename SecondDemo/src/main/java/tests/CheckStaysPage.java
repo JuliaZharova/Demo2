@@ -11,8 +11,9 @@ import static PageObject.BasePage.driver;
 
 public class CheckStaysPage{
 
-    @Test(groups = "smoke")
-    public void checksChoosingStaysOnStaysPage() {
+    @Test(groups = "smoke",
+    description = "Check the possibility of choosing stays")
+    public void checkChoosingStaysOnStaysPage() {
         WebDriverManager.chromedriver().setup();
         new BasePage(new ChromeDriver()).openBooking()
                 .checkStaysButtonIsDisplayed()
@@ -45,7 +46,7 @@ public class CheckStaysPage{
                 .checkSearchResult();
     }
 
-    @AfterMethod
+    @AfterMethod(description = "Quit driver")
     public void setDown() {
         driver.quit();
     }

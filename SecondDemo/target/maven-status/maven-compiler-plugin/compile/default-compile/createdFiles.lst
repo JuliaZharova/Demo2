@@ -1,0 +1,14 @@
+PageObject\CarRentalsPage.class
+PageObject\AttractionsPage.class
+PageObject\BasePage.class
+tests\CheckStaysResultPage.class
+PageObject\AirportTaxisPage.class
+tests\CheckForLanguageChange.class
+PageObject\StaysPage.class
+PageObject\StaysResultsPage.class
+PageObject\RegisterPage.class
+PageObject\LoginPage.class
+PageObject\GiveFeedbackPage.class
+listener\ClassForListener.class
+PageObject\FlightsPage.class
+tests\CheckStaysPage.class

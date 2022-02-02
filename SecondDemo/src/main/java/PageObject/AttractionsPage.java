@@ -1,5 +1,6 @@
 package PageObject;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,6 +21,7 @@ public class AttractionsPage extends BasePage {
     @FindBy(css = ".Tab-module__item___2B7Xl")
     private List<WebElement> tabAirportTaxis;
 
+    @Step("Check title 'Find and book a great experience'")
     public AttractionsPage checkTitleFindAndBookAGreatExperience() {
         System.out.println(titleFindAndBookAGreatExperience.getText());
         softAssert.assertEquals(titleFindAndBookAGreatExperience.getText(), "Find and book a great experience",
@@ -27,6 +29,7 @@ public class AttractionsPage extends BasePage {
         return this;
     }
 
+    @Step("Open Airport taxis page")
     public AirportTaxisPage openAirportTaxisPage(){
         tabAirportTaxis.get(4).click();
         return new AirportTaxisPage(driver);
