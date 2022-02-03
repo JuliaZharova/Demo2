@@ -20,6 +20,10 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    public static void setDown() {
+        driver.quit();
+    }
+
     @FindBy(xpath = "//div[@class=\"bui-header__main\"]")
     private WebElement bookingComLogo;
 
@@ -98,6 +102,7 @@ public class BasePage {
         return new StaysPage(driver);
     }
 
+    //@Step("Check that the question marked button is enabled")
     public BasePage checkQuestionMarkButtonIsEnabled() {
         System.out.println("Question mark button is enabled: " + questionMarkButton.isEnabled());
         return this;
@@ -108,6 +113,7 @@ public class BasePage {
         return this;
     }
 
+    //@Step("Check that the Register button is displayed")
     public BasePage checkRegisterButtonIsDisplayed() {
         System.out.println("Register button is enabled: " + registerButton.isEnabled());
         return this;
@@ -117,5 +123,36 @@ public class BasePage {
         System.out.println("Stays button is enabled: " + staysButton.isEnabled());
         softAssert.assertTrue(staysButton.isEnabled());
         return new StaysPage(driver);
+    }
+
+    //@Step("Click on the question marked button")
+    public HelpCenterPage clickOnQuestionMarkButton() {
+        questionMarkButton.click();
+        return new HelpCenterPage(driver);
+    }
+
+    //@Step("Check the menu items quantity")
+    public BasePage checkMenuItemsTitlesQuantity() {
+        System.out.println("Menu items: " + menuTabs.size());
+        return this;
+    }
+
+    //@Step("Click on the car rentals menu item")
+    public CarRentalsPage clickOnCarRentalsItem() {
+        menuTabs.get(2).click();
+        return new CarRentalsPage(driver);
+    }
+
+    //@Step("Check that the Register button has title "Зарегистрироваться"")
+    public BasePage checkRegistrationButtonTitle() {
+        System.out.println("Registration button title: " + registerButton.getText());
+        softAssert.assertEquals(registerButton.getText(), "Зарегистрироваться");
+        return this;
+    }
+
+    //@Step("Click on the Register button")
+    public RegisterPage clickOnRegistrationButton() {
+        registerButton.click();
+        return new RegisterPage(driver);
     }
 }
