@@ -174,7 +174,7 @@ public class FlightsPage extends BasePage {
     @Step("Choose Barcelona airport")
     public FlightsPage chooseBarcelonaAirport() {
         try {
-            WebDriverWait wait = (WebDriverWait) new WebDriverWait(driver, Duration.ofSeconds(10))
+            WebDriverWait wait = (WebDriverWait) new WebDriverWait(driver, Duration.ofSeconds(20))
                     .until(ExpectedConditions.elementToBeClickable(airportBCN));
             airportBCN.click();
         } catch (ClassCastException e) {

@@ -73,6 +73,8 @@ public class AttractionsPage extends BasePage {
     @FindBy(xpath = "//h2[@class=\"Text-module__root--variant-headline_2___8MqQR css-1uk1gs8\"]")
     private WebElement cruiseTitle;
 
+    @FindBy(xpath = "//a[@data-testid=\"search-bar-result\"]")
+    private WebElement nant;
 
     @Step("Check title 'Find and book a great experience'")
     public AttractionsPage checkTitleFindAndBookAGreatExperience() {
@@ -110,17 +112,8 @@ public class AttractionsPage extends BasePage {
 
     @Step("Click on the CheckPrice Button on Attractions Page")
     public AttractionsPage clickOnCheckPriceButton() {
-        try {
-            WebDriverWait wait = (WebDriverWait) new WebDriverWait(driver, Duration.ofSeconds(15))
-                    .until(ExpectedConditions.elementToBeClickable(checkPriceButton));
-            checkPriceButton.click();
-        } catch (ClassCastException e) {
-            System.out.println("ClassCastException");
-            checkPriceButton.click();
-        }
-        System.out.println("CheckPrice Button is enabled: " + checkPriceButton.isEnabled());
-        System.out.println(checkPriceButton.getText());
-        checkPriceButton.click();
+       System.out.println("Nant is displayed: " + nant.isDisplayed());
+       nant.click();
         return this;
     }
 

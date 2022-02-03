@@ -10,7 +10,7 @@ public class CheckAttractionsPageSearch {
 
     @Test(groups = "regression",
             description = "Check the search results on the Attraction page")
-    public void CheckAttractionsPageSearch() throws InterruptedException {
+    public void CheckAttractionsPageSearch(){
         WebDriverManager.chromedriver().setup();
         new BasePage(new ChromeDriver())
                 .openBooking()
