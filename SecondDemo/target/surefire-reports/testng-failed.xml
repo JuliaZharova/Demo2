@@ -6,30 +6,18 @@
   </listeners>
   <test thread-count="5" verbose="0" name="F:/Demo2/Demo2/SecondDemo(failed)">
     <classes>
-      <class name="tests.CheckLoginPage">
-        <methods>
-          <include name="checkValidDataLogIn" invocation-numbers="0"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- tests.CheckLoginPage -->
-      <class name="tests.CheckStaysResultPage">
-        <methods>
-          <include name="checkFilterPriceLess2000"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- tests.CheckStaysResultPage -->
       <class name="tests.CheckForLanguageChange">
         <methods>
           <include name="checksForLanguageChanges"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- tests.CheckForLanguageChange -->
-      <class name="tests.CheckCurrencyChangeAttractionPage">
+      <class name="tests.CheckPopularTour">
         <methods>
-          <include name="CheckCurrencyChangeAttractionPage"/>
+          <include name="checkPopularTour"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- tests.CheckCurrencyChangeAttractionPage -->
+      </class> <!-- tests.CheckPopularTour -->
     </classes>
   </test> <!-- F:/Demo2/Demo2/SecondDemo(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

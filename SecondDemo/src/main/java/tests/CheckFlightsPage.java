@@ -39,7 +39,7 @@ public class CheckFlightsPage {
                 .getTitle();
     }
 
-    @AfterMethod(description = "Quit driver")
+   @AfterMethod(description = "Quit driver")
     public void closeBrowser() {
         BasePage.setDown();
     }
