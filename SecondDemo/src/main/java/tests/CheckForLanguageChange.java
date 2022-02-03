@@ -2,14 +2,9 @@ package tests;
 
 import PageObject.BasePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-
-import static PageObject.BasePage.driver;
 
 public class CheckForLanguageChange{
 
@@ -36,7 +31,7 @@ public class CheckForLanguageChange{
     }
 
     @AfterMethod(description = "Quit driver")
-    public void setDown() {
-        driver.quit();
+    public void closeBrowser() {
+        BasePage.setDown();
     }
 }

@@ -2,12 +2,9 @@ package tests;
 
 import PageObject.BasePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-
-import static PageObject.BasePage.driver;
 
 public class CheckStaysPage{
 
@@ -47,7 +44,7 @@ public class CheckStaysPage{
     }
 
     @AfterMethod(description = "Quit driver")
-    public void setDown() {
-        driver.quit();
+    public void closeBrowser() {
+        BasePage.setDown();
     }
 }
