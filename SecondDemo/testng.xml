@@ -6,9 +6,54 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="F:/Demo2/Demo2/SecondDemo">
         <classes>
+            <class name="tests.CheckAttractionsPageSearch">
+                <methods>
+                    <include name="CheckAttractionsPageSearch"/>
+                </methods>
+            </class>
+            <class name="tests.CheckCarRentalCoronavirusPage">
+                <methods>
+                    <include name="checkCarRentalCoronavirusPage"/>
+                </methods>
+            </class>
+            <class name="tests.CheckCurrencyChangeAttractionPage">
+                <methods>
+                    <include name="CheckCurrencyChangeAttractionPage"/>
+                </methods>
+            </class>
+            <class name="tests.CheckFlightsPage">
+                <methods>
+                    <include name="checkFlightTicket"/>
+                </methods>
+            </class>
             <class name="tests.CheckForLanguageChange">
                 <methods>
                     <include name="checksForLanguageChanges"/>
+                </methods>
+            </class>
+            <class name="tests.CheckHelpCenterPage">
+                <methods>
+                    <include name="checkQuestionMarkButtonOpensHelpCenter"/>
+                </methods>
+            </class>
+            <class name="tests.CheckLoginPage">
+                <methods>
+                    <include name="checkValidDataLogIn"/>
+                </methods>
+            </class>
+            <class name="tests.CheckPopularTour">
+                <methods>
+                    <include name="checkPopularTour"/>
+                </methods>
+            </class>
+            <class name="tests.CheckRegistrationViaEmail">
+                <methods>
+                    <include name="checkRegistrationViaEmail"/>
+                </methods>
+            </class>
+            <class name="tests.CheckReturnToBasePage">
+                <methods>
+                    <include name="checkReturnToBasePage"/>
                 </methods>
             </class>
             <class name="tests.CheckStaysPage">
