@@ -6,12 +6,6 @@
   </listeners>
   <test thread-count="5" verbose="0" name="F:/Demo2/Demo2/SecondDemo(failed)">
     <classes>
-      <class name="tests.CheckStaysResultPage">
-        <methods>
-          <include name="checkFilterPriceLess2000"/>
-          <include name="setDown"/>
-        </methods>
-      </class> <!-- tests.CheckStaysResultPage -->
       <class name="tests.CheckForLanguageChange">
         <methods>
           <include name="checksForLanguageChanges"/>

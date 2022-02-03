@@ -1,0 +1,1 @@
+{"uuid":"977e0f9d-f1a7-4fe0-ae71-b2565a4445e0","name":"tests.CheckStaysPage.setDown","children":["3f405de8-3a70-490e-8345-34360084c784"],"description":"","befores":[],"afters":[{"name":"setDown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1643820598912,"stop":1643820600169}],"start":1643820598912,"stop":1643820600169}
