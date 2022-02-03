@@ -6,14 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterMethod;
 import org.testng.asserts.SoftAssert;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BasePage {
-    public static WebDriver driver;
+    protected static WebDriver driver;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -22,9 +21,12 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    @AfterMethod
-    public void setDown() {
-        driver.quit();
+    public static void setDown() {
+       driver.quit();
+    }
+
+    public static WebDriver getDriver(){
+        return driver;
     }
 
     @FindBy(xpath = "//div[@class=\"bui-header__main\"]")
