@@ -2,19 +2,29 @@
 <testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="93332" started-at="2022-02-03T00:02:58 EET" finished-at="2022-02-03T00:04:32 EET">
+  <suite name="All Test Suite" duration-ms="79456" started-at="2022-02-03T08:59:12 EET" finished-at="2022-02-03T09:00:32 EET">
     <groups>
       <group name="regression">
-        <method signature="CheckForLanguageChange.checksForLanguageChanges()[pri:0, instance:tests.CheckForLanguageChange@4108fa66]" name="checksForLanguageChanges" class="tests.CheckForLanguageChange"/>
-        <method signature="CheckStaysResultPage.checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@7e0aadd0]" name="checkFilterPriceLess2000" class="tests.CheckStaysResultPage"/>
+        <method signature="CheckForLanguageChange.checksForLanguageChanges()[pri:0, instance:tests.CheckForLanguageChange@7e0aadd0]" name="checksForLanguageChanges" class="tests.CheckForLanguageChange"/>
+        <method signature="CheckStaysResultPage.checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@27eb3298]" name="checkFilterPriceLess2000" class="tests.CheckStaysResultPage"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CheckStaysPage.checkChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@1f130eaf]" name="checkChoosingStaysOnStaysPage" class="tests.CheckStaysPage"/>
+        <method signature="CheckStaysPage.checkChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@21362712]" name="checkChoosingStaysOnStaysPage" class="tests.CheckStaysPage"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="F:/Demo2/Demo2/SecondDemo" duration-ms="93332" started-at="2022-02-03T00:02:58 EET" finished-at="2022-02-03T00:04:32 EET">
+    <test name="F:/Demo2/Demo2/SecondDemo" duration-ms="79456" started-at="2022-02-03T08:59:12 EET" finished-at="2022-02-03T09:00:32 EET">
+      <class name="tests.CheckStaysPage">
+        <test-method status="PASS" signature="checkChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@21362712]" name="checkChoosingStaysOnStaysPage" duration-ms="13907" started-at="2022-02-03T08:59:51 EET" description="Check the possibility of choosing stays" finished-at="2022-02-03T09:00:05 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkChoosingStaysOnStaysPage -->
+        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckStaysPage@21362712]" name="setDown" is-config="true" duration-ms="969" started-at="2022-02-03T09:00:05 EET" description="Quit driver" finished-at="2022-02-03T09:00:06 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDown -->
+      </class> <!-- tests.CheckStaysPage -->
       <class name="tests.CheckForLanguageChange">
-        <test-method status="FAIL" signature="checksForLanguageChanges()[pri:0, instance:tests.CheckForLanguageChange@4108fa66]" name="checksForLanguageChanges" duration-ms="38492" started-at="2022-02-03T00:02:59 EET" description="Check that all pages are in the same language" finished-at="2022-02-03T00:03:37 EET">
+        <test-method status="FAIL" signature="checksForLanguageChanges()[pri:0, instance:tests.CheckForLanguageChange@7e0aadd0]" name="checksForLanguageChanges" duration-ms="36683" started-at="2022-02-03T08:59:13 EET" description="Check that all pages are in the same language" finished-at="2022-02-03T08:59:49 EET">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -65,23 +75,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checksForLanguageChanges -->
-        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckForLanguageChange@4108fa66]" name="setDown" is-config="true" duration-ms="1098" started-at="2022-02-03T00:03:38 EET" description="Quit driver" finished-at="2022-02-03T00:03:39 EET">
+        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckForLanguageChange@7e0aadd0]" name="setDown" is-config="true" duration-ms="881" started-at="2022-02-03T08:59:50 EET" description="Quit driver" finished-at="2022-02-03T08:59:51 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDown -->
       </class> <!-- tests.CheckForLanguageChange -->
-      <class name="tests.CheckStaysPage">
-        <test-method status="PASS" signature="checkChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@1f130eaf]" name="checkChoosingStaysOnStaysPage" duration-ms="20051" started-at="2022-02-03T00:03:39 EET" description="Check the possibility of choosing stays" finished-at="2022-02-03T00:03:59 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkChoosingStaysOnStaysPage -->
-        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckStaysPage@1f130eaf]" name="setDown" is-config="true" duration-ms="1028" started-at="2022-02-03T00:03:59 EET" description="Quit driver" finished-at="2022-02-03T00:04:00 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDown -->
-      </class> <!-- tests.CheckStaysPage -->
       <class name="tests.CheckStaysResultPage">
-        <test-method status="FAIL" signature="checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@7e0aadd0]" name="checkFilterPriceLess2000" duration-ms="29892" started-at="2022-02-03T00:04:00 EET" description="Check the filter &#039;Price is less than or equal to 2000&#039;" finished-at="2022-02-03T00:04:30 EET">
+        <test-method status="FAIL" signature="checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@27eb3298]" name="checkFilterPriceLess2000" duration-ms="24874" started-at="2022-02-03T09:00:06 EET" description="Check the filter &#039;Price is less than or equal to 2000&#039;" finished-at="2022-02-03T09:00:31 EET">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-testid="overlay-card"]"}
@@ -90,9 +90,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-HCHNUOI', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_322'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f723730e431a4986e195a6a70c2b1330, findElement {using=xpath, value=//div[@data-testid="overlay-card"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54754}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54754/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f723730e431a4986e195a6a70c2b1330]]>
+Command: [335076b6d2e0281c9df4a12bd97df2d1, findElement {using=xpath, value=//div[@data-testid="overlay-card"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52976/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 335076b6d2e0281c9df4a12bd97df2d1]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-testid="overlay-card"]"}
@@ -101,9 +101,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-HCHNUOI', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_322'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f723730e431a4986e195a6a70c2b1330, findElement {using=xpath, value=//div[@data-testid="overlay-card"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54754}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54754/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f723730e431a4986e195a6a70c2b1330
+Command: [335076b6d2e0281c9df4a12bd97df2d1, findElement {using=xpath, value=//div[@data-testid="overlay-card"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52976/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 335076b6d2e0281c9df4a12bd97df2d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -162,7 +162,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFilterPriceLess2000 -->
-        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckStaysResultPage@7e0aadd0]" name="setDown" is-config="true" duration-ms="922" started-at="2022-02-03T00:04:31 EET" description="Quit driver" finished-at="2022-02-03T00:04:32 EET">
+        <test-method status="PASS" signature="setDown()[pri:0, instance:tests.CheckStaysResultPage@27eb3298]" name="setDown" is-config="true" duration-ms="803" started-at="2022-02-03T09:00:31 EET" description="Quit driver" finished-at="2022-02-03T09:00:32 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDown -->
