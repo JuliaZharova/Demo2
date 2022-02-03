@@ -26,7 +26,7 @@ public class StaysResultsPage extends BasePage {
     @FindBy(xpath = "//div[@data-filters-item=\"pri:pri=1\"]")
     private WebElement priceFilterLess2000;
 
-    @FindBy(xpath = "//input[@name=\"pri=1\"]")
+    @FindBy(xpath = "//div[@data-filters-item=\"pri:pri=1\"]")
     private WebElement checkBoxForPriceFilterLess2000;
 
     @FindBy(xpath = "//h1[@class=\"_30227359d _0db903e42\"]")
@@ -83,7 +83,6 @@ public class StaysResultsPage extends BasePage {
     @Step("Check that overlay card is displayed")
     public StaysResultsPage checkOverlayCardIsDisplayed(){
         System.out.println("Overlay card is displayed:" + overlayCard.isDisplayed());
-        System.out.println(overlayCard.getText());
         return this;
     }
 
