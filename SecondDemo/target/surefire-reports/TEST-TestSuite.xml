@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="45.947" tests="3" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="128.277" tests="12" errors="0" skipped="0" failures="4">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Tools\jdk\jdk-8.0.322.6-hotspot\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\san9-\AppData\Local\Temp\surefire9033465843195018725\surefirebooter4930320029023364724.jar C:\Users\san9-\AppData\Local\Temp\surefire9033465843195018725 2022-02-03T11-40-21_910-jvmRun1 surefire3930245149004707062tmp surefire_04455313098073796790tmp"/>
+    <property name="sun.java.command" value="C:\Users\san9-\AppData\Local\Temp\surefire714032865599950435\surefirebooter945939297656915298.jar C:\Users\san9-\AppData\Local\Temp\surefire714032865599950435 2022-02-03T23-20-45_378-jvmRun1 surefire6103496939620852535tmp surefire_0749539092504202184tmp"/>
     <property name="surefire.test.class.path" value="F:\Demo2\Demo2\SecondDemo\target\test-classes;F:\Demo2\Demo2\SecondDemo\target\classes;C:\Users\san9-\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\san9-\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\san9-\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\san9-\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\san9-\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\san9-\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.1\selenium-java-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.1\selenium-api-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.1\selenium-chrome-driver-4.1.1.jar;C:\Users\san9-\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\san9-\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\san9-\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.1\selenium-chromium-driver-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.1\selenium-json-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.1\selenium-devtools-v85-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.1.1\selenium-devtools-v94-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.1.1\selenium-devtools-v95-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v96\4.1.1\selenium-devtools-v96-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.1\selenium-edge-driver-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.1\selenium-firefox-driver-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.1.1\selenium-firefox-xpi-driver-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.1\selenium-ie-driver-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.1\selenium-opera-driver-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.1\selenium-remote-driver-4.1.1.jar;C:\Users\san9-\.m2\repository\io\netty\netty-buffer\4.1.70.Final\netty-buffer-4.1.70.Final.jar;C:\Users\san9-\.m2\repository\io\netty\netty-codec-http\4.1.70.Final\netty-codec-http-4.1.70.Final.jar;C:\Users\san9-\.m2\repository\io\netty\netty-codec\4.1.70.Final\netty-codec-4.1.70.Final.jar;C:\Users\san9-\.m2\repository\io\netty\netty-handler\4.1.70.Final\netty-handler-4.1.70.Final.jar;C:\Users\san9-\.m2\repository\io\netty\netty-common\4.1.70.Final\netty-common-4.1.70.Final.jar;C:\Users\san9-\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.70.Final\netty-transport-classes-epoll-4.1.70.Final.jar;C:\Users\san9-\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.70.Final\netty-transport-classes-kqueue-4.1.70.Final.jar;C:\Users\san9-\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.70.Final\netty-transport-native-unix-common-4.1.70.Final.jar;C:\Users\san9-\.m2\repository\io\netty\netty-transport\4.1.70.Final\netty-transport-4.1.70.Final.jar;C:\Users\san9-\.m2\repository\io\netty\netty-resolver\4.1.70.Final\netty-resolver-4.1.70.Final.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-api\1.9.1\opentelemetry-api-1.9.1.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-context\1.9.1\opentelemetry-context-1.9.1.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.9.1\opentelemetry-exporter-logging-1.9.1.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.9.1-alpha\opentelemetry-sdk-metrics-1.9.1-alpha.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.9.1-alpha\opentelemetry-sdk-logs-1.9.1-alpha.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.9.1\opentelemetry-sdk-common-1.9.1.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.9.1\opentelemetry-sdk-extension-autoconfigure-spi-1.9.1.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.9.1-alpha\opentelemetry-sdk-extension-autoconfigure-1.9.1-alpha.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.9.1\opentelemetry-sdk-trace-1.9.1.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.9.1-alpha\opentelemetry-api-metrics-1.9.1-alpha.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.9.1\opentelemetry-sdk-1.9.1.jar;C:\Users\san9-\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.9.1-alpha\opentelemetry-semconv-1.9.1-alpha.jar;C:\Users\san9-\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\san9-\.m2\repository\net\bytebuddy\byte-buddy\1.12.2\byte-buddy-1.12.2.jar;C:\Users\san9-\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\san9-\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\san9-\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\san9-\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\san9-\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\san9-\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\san9-\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\san9-\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\san9-\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\san9-\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.1\selenium-http-4.1.1.jar;C:\Users\san9-\.m2\repository\net\jodah\failsafe\2.4.4\failsafe-2.4.4.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.1\selenium-safari-driver-4.1.1.jar;C:\Users\san9-\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.1\selenium-support-4.1.1.jar;C:\Users\san9-\.m2\repository\io\github\bonigarcia\webdrivermanager\5.0.3\webdrivermanager-5.0.3.jar;C:\Users\san9-\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\san9-\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;C:\Users\san9-\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\san9-\.m2\repository\com\github\docker-java\docker-java\3.2.12\docker-java-3.2.12.jar;C:\Users\san9-\.m2\repository\com\github\docker-java\docker-java-core\3.2.12\docker-java-core-3.2.12.jar;C:\Users\san9-\.m2\repository\com\github\docker-java\docker-java-api\3.2.12\docker-java-api-3.2.12.jar;C:\Users\san9-\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\san9-\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\san9-\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\san9-\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\san9-\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\san9-\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\san9-\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\san9-\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\san9-\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\san9-\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.12\docker-java-transport-httpclient5-3.2.12.jar;C:\Users\san9-\.m2\repository\com\github\docker-java\docker-java-transport\3.2.12\docker-java-transport-3.2.12.jar;C:\Users\san9-\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\san9-\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\san9-\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\san9-\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\san9-\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\san9-\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\san9-\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\san9-\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\san9-\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\san9-\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\san9-\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\san9-\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\san9-\.m2\repository\io\qameta\allure\allure-testng\2.17.2\allure-testng-2.17.2.jar;C:\Users\san9-\.m2\repository\io\qameta\allure\allure-java-commons\2.17.2\allure-java-commons-2.17.2.jar;C:\Users\san9-\.m2\repository\io\qameta\allure\allure-model\2.17.2\allure-model-2.17.2.jar;C:\Users\san9-\.m2\repository\io\qameta\allure\allure-test-filter\2.17.2\allure-test-filter-2.17.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\san9-"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\san9-\AppData\Local\Temp\surefire9033465843195018725\surefirebooter4930320029023364724.jar;C:\Users\san9-\.m2\repository/org/aspectj/aspectjweaver/1.9.8.RC3/aspectjweaver-1.9.8.RC3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\san9-\AppData\Local\Temp\surefire714032865599950435\surefirebooter945939297656915298.jar;C:\Users\san9-\.m2\repository/org/aspectj/aspectjweaver/1.9.8.RC3/aspectjweaver-1.9.8.RC3.jar"/>
     <property name="sun.boot.class.path" value="C:\Tools\jdk\jdk-8.0.322.6-hotspot\jre\lib\resources.jar;C:\Tools\jdk\jdk-8.0.322.6-hotspot\jre\lib\rt.jar;C:\Tools\jdk\jdk-8.0.322.6-hotspot\jre\lib\sunrsasign.jar;C:\Tools\jdk\jdk-8.0.322.6-hotspot\jre\lib\jsse.jar;C:\Tools\jdk\jdk-8.0.322.6-hotspot\jre\lib\jce.jar;C:\Tools\jdk\jdk-8.0.322.6-hotspot\jre\lib\charsets.jar;C:\Tools\jdk\jdk-8.0.322.6-hotspot\jre\lib\jfr.jar;C:\Tools\jdk\jdk-8.0.322.6-hotspot\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,13 +62,124 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="checksForLanguageChanges" classname="tests.CheckForLanguageChange" time="24.019">
+  <testcase name="CheckAttractionsPageSearch" classname="tests.CheckAttractionsPageSearch" time="10.203">
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAK1jvGPBsACAdICJGEwMWVhMmJjLWQ4NmUtNGFkMi04ZjZiLWQyOTJmOTUyODA4N9gCBeACAQ;sid=58b8acf44b5f762b2c971ae3cd4d35f4;keep_landing=1&sb_price_type=total&
+Attractions Page button is enabled: true
+https://www.booking.com/attractions/index.ru.html?label=gen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuAK1jvGPBsACAdICJGEwMWVhMmJjLWQ4NmUtNGFkMi04ZjZiLWQyOTJmOTUyODA4N9gCBuACAQ;sid=58b8acf44b5f762b2c971ae3cd4d35f4
+Находите и бронируйте отличные варианты досуга
+ClassCastException
+CheckPrice Button is enabled: true
+Проверить цены
+https://www.booking.com/attractions/searchresults/fr/nantes.ru.html?label=gen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuAK1jvGPBsACAdICJGEwMWVhMmJjLWQ4NmUtNGFkMi04ZjZiLWQyOTJmOTUyODA4N9gCBuACAQ&aid=304142&sid=58b8acf44b5f762b2c971ae3cd4d35f4&source=search_box
+Нант
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 52742
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+??? 03, 2022 11:20:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+??? 03, 2022 11:20:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
+??? 03, 2022 11:20:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 97 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="checkCarRentalCoronavirusPage" classname="tests.CheckCarRentalCoronavirusPage" time="5.894">
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAK9jvGPBsACAdICJDNhNWNkZmUxLWI2NjAtNGU2MS1iODEzLTNhYTBmMGY3ZDZkY9gCBeACAQ;sid=22db2859d5d6507bc841b386d6521afc;keep_landing=1&sb_price_type=total&
+Menu items: 8
+Car rentals page is displayed:true
+Clean cars info block is displayed: true
+Title of Clean cars info block: Чистые автомобили. Гибкие условия бронирования. Соблюдение дистанции в пунктах проката.
+Find out how link is enabled: true
+Title of Find out how link: Как мы это делаем
+Help Center page is displayed:true
+Title of Car rental coronavirus page: Аренда автомобилей для любой поездки
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 51894
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+??? 03, 2022 11:21:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+??? 03, 2022 11:21:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
+??? 03, 2022 11:21:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 97 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="CheckCurrencyChangeAttractionPage" classname="tests.CheckCurrencyChangeAttractionPage" time="15.462">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.css-1rrebqu&quot;}&#10;  (Session info: chrome=97.0.4692.99)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-HCHNUOI&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_322&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a181f9f90e22bc525ae9abd2c8128c70, findElement {using=css selector, value=.css-1rrebqu}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51378/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a181f9f90e22bc525ae9abd2c8128c70" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".css-1rrebqu"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-HCHNUOI', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_322'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a181f9f90e22bc525ae9abd2c8128c70, findElement {using=css selector, value=.css-1rrebqu}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51378/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a181f9f90e22bc525ae9abd2c8128c70
+	at tests.CheckCurrencyChangeAttractionPage.CheckCurrencyChangeAttractionPage(CheckCurrencyChangeAttractionPage.java:22)
+]]></failure>
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuALEjvGPBsACAdICJDMxY2E1NmM4LTkzOGItNDQ3Yi1hYzhhLWMyNmJlNjc5YTMyNdgCBeACAQ;sid=27c52e2d55ffa6eb90656d86bf533262;keep_landing=1&sb_price_type=total&
+Attractions Page button is enabled: true
+https://www.booking.com/attractions/index.ru.html?label=gen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuALEjvGPBsACAdICJDMxY2E1NmM4LTkzOGItNDQ3Yi1hYzhhLWMyNmJlNjc5YTMyNdgCBuACAQ;sid=27c52e2d55ffa6eb90656d86bf533262
+Находите и бронируйте отличные варианты досуга
+ClassCastException
+CheckPrice Button is enabled: true
+Проверить цены
+https://www.booking.com/attractions/index.ru.html?label=gen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuALEjvGPBsACAdICJDMxY2E1NmM4LTkzOGItNDQ3Yi1hYzhhLWMyNmJlNjc5YTMyNdgCBuACAQ;sid=27c52e2d55ffa6eb90656d86bf533262
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 63902
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+??? 03, 2022 11:21:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+??? 03, 2022 11:21:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
+??? 03, 2022 11:21:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 97 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="checkFlightTicket" classname="tests.CheckFlightsPage" time="13.676">
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuALUjvGPBsACAdICJGU0YTIxODI5LTE1MzQtNGRlZS04NGNjLTZkMzQzYzc4Y2JkM9gCBeACAQ;sid=a91182ba49f5fd8bdd4173093b4d2524;keep_landing=1&sb_price_type=total&
+Flights button is displayed: true
+Flights button is enabled: true
+One way button is displayed: true
+popUp Airport is enabled: true
+Kyiv airport was deleted
+Empty Search Box From is enabled: true
+Kharkiv Airport is enabled: true
+Empty Search Box To is enabled: true
+Barcelona Airport is displayed: true
+ClassCastException
+Calendar is displayed: false
+Ticket is displayed: true
+The title is: Ваш рейс в город Barcelona
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 59968
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+??? 03, 2022 11:21:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+??? 03, 2022 11:21:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
+??? 03, 2022 11:21:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 97 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="checksForLanguageChanges" classname="tests.CheckForLanguageChange" time="22.89">
     <failure message="The following asserts failed:&#10;	The wrong language is displayed on the page Flights expected [Compare and book flights with ease] but found [Порівнюйте і бронюйте перельоти з легкістю]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 The following asserts failed:
 	The wrong language is displayed on the page Flights expected [Compare and book flights with ease] but found [Порівнюйте і бронюйте перельоти з легкістю]
-	at tests.CheckForLanguageChange.checksForLanguageChanges(CheckForLanguageChange.java:35)
+	at tests.CheckForLanguageChange.checksForLanguageChanges(CheckForLanguageChange.java:30)
 ]]></failure>
-    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAKNxu6PBsACAdICJDA2YzYyNjRmLWJiZjYtNDY3OC04YzBiLTkxYzExODBiZmU1M9gCBeACAQ;sid=b18ac777ec8f5ee12f765d4f2c3bd465;keep_landing=1&sb_price_type=total&
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuALijvGPBsACAdICJGEzZDQ3MGZjLTdjZDItNDcxMy04NGRiLThiYjFjMzg1OTZlMtgCBeACAQ;sid=cdb2b0386b2e7c8d5c3d52d9f6ad53d4;keep_landing=1&sb_price_type=total&
 Language button is enabled: true
 Language popup is displayed: true
 English language button is enabled: true
@@ -79,23 +190,137 @@ Find and book a great experience
 Book your airport taxi
 Порівнюйте і бронюйте перельоти з легкістю
 ]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 58585
+    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 63330
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-??? 03, 2022 11:40:28 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+??? 03, 2022 11:21:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-??? 03, 2022 11:40:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+??? 03, 2022 11:21:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
-??? 03, 2022 11:40:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+??? 03, 2022 11:21:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 97 of 96
 ]]></system-err>
   </testcase>
-  <testcase name="checkChoosingStaysOnStaysPage" classname="tests.CheckStaysPage" time="8.673">
-    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAKjxu6PBsACAdICJDM0YzYzOTM4LWVlNTItNDY5Mi1iOWUzLTBmMGM1NjAyNDIzMdgCBeACAQ;sid=d23ff8aca5762e628a8bbb47ce4423dc;keep_landing=1&sb_price_type=total&
+  <testcase name="checkQuestionMarkButtonOpensHelpCenter" classname="tests.CheckHelpCenterPage" time="4.457">
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAL6jvGPBsACAdICJDZmZjM5NGMzLTVkODYtNGE1OC04NTEzLWZlYjgyYzE4OTFhNNgCBeACAQ;sid=31e06e55981dba4a147697660d6ac888;keep_landing=1&sb_price_type=total&
+Question mark button is enabled: true
+Help Center page is displayed:true
+Title of Help Center page: 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 60440
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+??? 03, 2022 11:22:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+??? 03, 2022 11:22:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
+??? 03, 2022 11:22:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 97 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="checkValidDataLogIn[anneta792@gmail.com, Kozyreva89](1)" classname="tests.CheckLoginPage" time="4.948">
+    <failure message="The wrong title is displayed on the Password Page! expected [Введите пароль] but found [Войдите или создайте аккаунт]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: The wrong title is displayed on the Password Page! expected [Введите пароль] but found [Войдите или создайте аккаунт]
+	at tests.CheckLoginPage.checkValidDataLogIn(CheckLoginPage.java:30)
+]]></failure>
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAL_jvGPBsACAdICJGIxMWQ1YmUzLTJiZjMtNDdlMC1hMGM2LTQyY2FkMDcxNzExMdgCBeACAQ;sid=56b201e650437d49a5f54fb3fe5e3697;keep_landing=1&sb_price_type=total&
+Login button is enabled: true
+https://account.booking.com/sign-in?op_token=EgVvYXV0aCKTBQoUdk8xS2Jsazd4WDl0VW4yY3BaTFMSCWF1dGhvcml6ZRo1aHR0cHM6Ly9zZWN1cmUuYm9va2luZy5jb20vbG9naW4uaHRtbD9vcD1vYXV0aF9yZXR1cm4qsgRVcUlENUs5NlpIWXo0eDRPdjRzcFFxQ2lRT0YzX2dvWFRQQzh6bnNyNjNab1U1NzlESWcyX1NtT1Brbl9BdFVKX2V6UnhFMVNCeHRXUFhkUlRPZ2pWRkc0YVR6LThYaFpsZ3c1cTdYS3Z3Q09xaklPUVZuTHNRejdlOFpzZTdLemRNT01qaFhSd2MwTnVJVGtWdnlBay1aOWhIai1nVF91bWw0Q3NnOHNTVUZUbkp6bFNhcGtWSmdkX3pva0lFTlFJRVBrVnVtV2QyS2YwMkVGSldWYzcxbjYzOWtuQ0c3X05WdWJVdkpQRmd1V3lXWGZmN1J0WllIVnlXUmZhLXNiNWhvMGlhTUZXQkJucm9xOUlZV2ZWLVE5Z0VHM2laNzc5bWRNNVV2UGFtSVFyeU1SRHFPZFdMWWlIdU5Tb0VnN1Q2WjZzLU5xQjhtSDlCb3JERDlZd21SMWcwUVMxVzlYd0pTck5zbVprOFRUYVg3UnhaYm4tOWhuUWtWcUU3NVN6RTVGaWpwUUd2QXJmT2hGWUFWQV9TRXhialdab004VTE3X29lYi1nV1FYUTE1TUEzOEZnTElGWGVfUWFfb3plZE5XbWJzZWNVMGZLM2otQ1BQenhUbDYxbG5OVE1tcmFpX01XY2c0emwyTDkzU3dld3dfTWdWRHNIT2xxb1hyWkdiLV9wa0lKTW42MXpOamVSc0JPN2ZsdXFFSGQxQV9oTGlwWFgxWTJZc3hnaVlvRHRnQgRjb2RlKhYIjsgSMIK-u_rKsCU6AEIAWIGP8Y8G
+Войдите или создайте аккаунт
+https://account.booking.com/sign-in?op_token=EgVvYXV0aCKTBQoUdk8xS2Jsazd4WDl0VW4yY3BaTFMSCWF1dGhvcml6ZRo1aHR0cHM6Ly9zZWN1cmUuYm9va2luZy5jb20vbG9naW4uaHRtbD9vcD1vYXV0aF9yZXR1cm4qsgRVcUlENUs5NlpIWXo0eDRPdjRzcFFxQ2lRT0YzX2dvWFRQQzh6bnNyNjNab1U1NzlESWcyX1NtT1Brbl9BdFVKX2V6UnhFMVNCeHRXUFhkUlRPZ2pWRkc0YVR6LThYaFpsZ3c1cTdYS3Z3Q09xaklPUVZuTHNRejdlOFpzZTdLemRNT01qaFhSd2MwTnVJVGtWdnlBay1aOWhIai1nVF91bWw0Q3NnOHNTVUZUbkp6bFNhcGtWSmdkX3pva0lFTlFJRVBrVnVtV2QyS2YwMkVGSldWYzcxbjYzOWtuQ0c3X05WdWJVdkpQRmd1V3lXWGZmN1J0WllIVnlXUmZhLXNiNWhvMGlhTUZXQkJucm9xOUlZV2ZWLVE5Z0VHM2laNzc5bWRNNVV2UGFtSVFyeU1SRHFPZFdMWWlIdU5Tb0VnN1Q2WjZzLU5xQjhtSDlCb3JERDlZd21SMWcwUVMxVzlYd0pTck5zbVprOFRUYVg3UnhaYm4tOWhuUWtWcUU3NVN6RTVGaWpwUUd2QXJmT2hGWUFWQV9TRXhialdab004VTE3X29lYi1nV1FYUTE1TUEzOEZnTElGWGVfUWFfb3plZE5XbWJzZWNVMGZLM2otQ1BQenhUbDYxbG5OVE1tcmFpX01XY2c0emwyTDkzU3dld3dfTWdWRHNIT2xxb1hyWkdiLV9wa0lKTW42MXpOamVSc0JPN2ZsdXFFSGQxQV9oTGlwWFgxWTJZc3hnaVlvRHRnQgRjb2RlKhYIjsgSMIK-u_rKsCU6AEIAWIGP8Y8G
+Войдите или создайте аккаунт
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 58709
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+??? 03, 2022 11:22:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+??? 03, 2022 11:22:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
+??? 03, 2022 11:22:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 97 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="checkPopularTour" classname="tests.CheckPopularTour" time="9.612">
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAKFj_GPBsACAdICJGM1ODhjNWNjLTIxMWMtNDk3OS1hYjMzLWRmMzVjYjZlMGYyY9gCBeACAQ;sid=3aecd0b8c038db177b46fc11c1970d17;keep_landing=1&sb_price_type=total&
+Attractions button is displayed: true
+Attractions button is enabled: true
+Current title is: Находите и бронируйте отличные варианты досуга
+Top destination is displayed: true
+ClassCastException
+Category Tours is displayed: true
+Category Tours is enabled: true
+Category Popular This Week is enabled: true
+The title is: Хор-Дубай — круиз с трансфером по желанию
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 57042
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+??? 03, 2022 11:22:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+??? 03, 2022 11:22:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
+??? 03, 2022 11:22:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 97 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="checkRegistrationViaEmail" classname="tests.CheckRegistrationViaEmail" time="5.908">
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAKPj_GPBsACAdICJDQ1NDA5YjAxLTJmNDEtNGQ5OC1hODM3LTYwMTc0MGEwZDdiM9gCBeACAQ;sid=3ad219f8fdd658f51510c1147e8b7170;keep_landing=1&sb_price_type=total&
+Register button is enabled: true
+Registration button title: Зарегистрироваться
+Register page is displayed: true
+Register page title: Войдите или создайте аккаунт
+Input field is enable: true
+Label text of input field: Адрес электронной почты
+Input field contains: 
+Register button is enable: true
+Register button title: 
+Email for the test: tanya.finogentova@gmail.com
+Title after click on Register button: Войдите или создайте аккаунт
+Register button is enable: true
+Register button title: 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 52733
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+??? 03, 2022 11:22:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+??? 03, 2022 11:22:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
+??? 03, 2022 11:22:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 97 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="checkReturnToBasePage" classname="tests.CheckReturnToBasePage" time="7.732">
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAKVj_GPBsACAdICJDRjN2Y5NGY5LWJjM2UtNDQ1Mi04MWRlLTJkMmQ4ZTBlMzlmNtgCBeACAQ;sid=c18ddbf8b36711fa2cd371246fc1d586;keep_landing=1&sb_price_type=total&
+Stays button is enabled: true
+Current title is: Найдите жилье для новой поездки
+Car Rentals button is displayed: true
+Car Rentals button is enabled: true
+Current title is: Аренда автомобилей для любой поездки
+Stays button is enabled: true
+Attractions button is displayed: true
+Current title is: Находите и бронируйте отличные варианты досуга
+Stays button is enabled: true
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 50677
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+??? 03, 2022 11:22:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+??? 03, 2022 11:22:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
+??? 03, 2022 11:22:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 97 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="checkChoosingStaysOnStaysPage" classname="tests.CheckStaysPage" time="8.621">
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAKej_GPBsACAdICJGE3OTI4MjA4LWQyNzAtNGVhNy1hNzVmLTFiOGY4NjY2YWMyNNgCBeACAQ;sid=bc154ae9b115e0f184ac15ae9662a828;keep_landing=1&sb_price_type=total&
 Stays button is enabled: true
 Stays button is selected: true
 Input field 'Destination' is enabled: true
@@ -115,71 +340,55 @@ Adults count after changes: 3 взрослых
 Children count after changes: без детей
 Room count after changes: 2 номера
 Prices button is enabled: true
-https://www.booking.com/searchresults.ru.html?label=gen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuAKjxu6PBsACAdICJDM0YzYzOTM4LWVlNTItNDY5Mi1iOWUzLTBmMGM1NjAyNDIzMdgCBuACAQ&sid=d23ff8aca5762e628a8bbb47ce4423dc&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.ru.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuAKjxu6PBsACAdICJDM0YzYzOTM4LWVlNTItNDY5Mi1iOWUzLTBmMGM1NjAyNDIzMdgCBuACAQ%3Bsid%3Dd23ff8aca5762e628a8bbb47ce4423dc%3Bsb_price_type%3Dtotal%26%3B&ss=%D0%91%D1%83%D0%BA%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C&is_ski_area=0&checkin_year=2022&checkin_month=2&checkin_monthday=14&checkout_year=2022&checkout_month=2&checkout_monthday=15&group_adults=3&group_children=0&no_rooms=2&b_h4u_keep_filters=&from_sf=1&ss_raw=%D0%91%D1%83%D0%BA%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C&search_pageview_id=e102441189f600bb
+https://www.booking.com/searchresults.ru.html?label=gen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuAKej_GPBsACAdICJGE3OTI4MjA4LWQyNzAtNGVhNy1hNzVmLTFiOGY4NjY2YWMyNNgCBuACAQ&sid=bc154ae9b115e0f184ac15ae9662a828&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.ru.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuAKej_GPBsACAdICJGE3OTI4MjA4LWQyNzAtNGVhNy1hNzVmLTFiOGY4NjY2YWMyNNgCBuACAQ%3Bsid%3Dbc154ae9b115e0f184ac15ae9662a828%3Bsb_price_type%3Dtotal%26%3B&ss=%D0%91%D1%83%D0%BA%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C&is_ski_area=0&checkin_year=2022&checkin_month=2&checkin_monthday=14&checkout_year=2022&checkout_month=2&checkout_monthday=15&group_adults=3&group_children=0&no_rooms=2&b_h4u_keep_filters=&from_sf=1
 Буковель
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 57568
+    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 64468
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-??? 03, 2022 11:40:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+??? 03, 2022 11:22:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-??? 03, 2022 11:40:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+??? 03, 2022 11:22:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
-??? 03, 2022 11:40:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+??? 03, 2022 11:22:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 97 of 96
 ]]></system-err>
   </testcase>
-  <testcase name="checkFilterPriceLess2000" classname="tests.CheckStaysResultPage" time="9.63">
-    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAKsxu6PBsACAdICJDhiNzhmNTg1LWRkOWEtNDA5OC04NzI2LTA3NTA4MzBjZjhlZNgCBeACAQ;sid=870088473a19a2553758921da2e22f5f;keep_landing=1&sb_price_type=total&
+  <testcase name="checkFilterPriceLess2000" classname="tests.CheckStaysResultPage" time="8.868">
+    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=97.0.4692.99)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-HCHNUOI&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_322&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [64bc7e59aec5709cf09930fc59b8bd1f, isElementDisplayed {id=8389f130-c9f8-48ff-8fce-35a8c7849971}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52041/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (64bc7e59aec5709cf09930fc59b8bd1f)] -&gt; xpath: //div[@data-testid=&quot;overlay-card&quot;]]&#10;Session ID: 64bc7e59aec5709cf09930fc59b8bd1f" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-HCHNUOI', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_322'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [64bc7e59aec5709cf09930fc59b8bd1f, isElementDisplayed {id=8389f130-c9f8-48ff-8fce-35a8c7849971}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52041/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (64bc7e59aec5709cf09930fc59b8bd1f)] -> xpath: //div[@data-testid="overlay-card"]]
+Session ID: 64bc7e59aec5709cf09930fc59b8bd1f
+	at tests.CheckStaysResultPage.checkFilterPriceLess2000(CheckStaysResultPage.java:30)
+]]></failure>
+    <system-out><![CDATA[https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAKnj_GPBsACAdICJDdmMDY3YzFjLTI3NjItNDY5OS04MGZmLTM0MDY1MjcwODgyM9gCBeACAQ;sid=b9085f8595cedcfc33abb1a6c9f172e9;keep_landing=1&sb_price_type=total&
 Stays button is enabled: true
 Prices button is enabled: true
-https://www.booking.com/searchresults.ru.html?label=gen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuAKsxu6PBsACAdICJDhiNzhmNTg1LWRkOWEtNDA5OC04NzI2LTA3NTA4MzBjZjhlZNgCBuACAQ&sid=870088473a19a2553758921da2e22f5f&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.ru.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuAKsxu6PBsACAdICJDhiNzhmNTg1LWRkOWEtNDA5OC04NzI2LTA3NTA4MzBjZjhlZNgCBuACAQ%3Bsid%3D870088473a19a2553758921da2e22f5f%3Bsb_price_type%3Dtotal%26%3B&ss=%D0%91%D1%83%D0%BA%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C&is_ski_area=0&checkin_year=2022&checkin_month=2&checkin_monthday=14&checkout_year=2022&checkout_month=2&checkout_monthday=15&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1
+https://www.booking.com/searchresults.ru.html?label=gen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuAKnj_GPBsACAdICJDdmMDY3YzFjLTI3NjItNDY5OS04MGZmLTM0MDY1MjcwODgyM9gCBuACAQ&sid=b9085f8595cedcfc33abb1a6c9f172e9&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.ru.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaOkBiAEBmAEhuAEXyAEM2AEB6AEB-AELiAIBqAIDuAKnj_GPBsACAdICJDdmMDY3YzFjLTI3NjItNDY5OS04MGZmLTM0MDY1MjcwODgyM9gCBuACAQ%3Bsid%3Db9085f8595cedcfc33abb1a6c9f172e9%3Bsb_price_type%3Dtotal%26%3B&ss=%D0%91%D1%83%D0%BA%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C&is_ski_area=0&checkin_year=2022&checkin_month=2&checkin_monthday=14&checkout_year=2022&checkout_month=2&checkout_monthday=15&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1
 Буковель
 Filter popup is displayed: true
 Price filter 'Less2000' is displayed: true
 Checkbox for price filter 'Less 2000' is enabled: true
 
 Overlay card is displayed:true
-'Popularity' button is displayed: true
-'Houses and apartments first' button is displayed: true
-'From low price' button is displayed: true
-Буковель
-1 990
-1 600
-1 500
-1 500
-1 816
-1 343
-1 799
-900
-1 400
-1 600
-1 800
-2 000
-1 650
-1 800
-1 200
-1 800
-1 800
-1 600
-1 600
-1 950
-1 750
-1 400
-1 700
-1 500
-2 000
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 59854
+    <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 55041
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-??? 03, 2022 11:41:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+??? 03, 2022 11:22:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-??? 03, 2022 11:41:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+??? 03, 2022 11:22:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: 96
-??? 03, 2022 11:41:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+??? 03, 2022 11:22:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 97 of 96
 ]]></system-err>
   </testcase>

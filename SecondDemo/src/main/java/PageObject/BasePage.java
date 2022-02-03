@@ -22,10 +22,10 @@ public class BasePage {
     }
 
     public static void setDown() {
-       driver.quit();
+        driver.quit();
     }
 
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
         return driver;
     }
 
@@ -55,6 +55,36 @@ public class BasePage {
 
     @FindBy(css = ".bui-tab__link")
     List<WebElement> menuTabs;
+
+    @FindBy(partialLinkText = "Варианты досуга")
+    private WebElement attractionsPageButton;
+
+    @FindBy(xpath = "//span[@class=\"sb-searchbox__title-text\"]")
+    private WebElement staysTitle;
+
+    @FindBy(xpath = "//div[@class=\"Text-module__root--variant-headline_1___2W9ql\"]")
+    private WebElement flightsTitle;
+
+    @FindBy(xpath = "//div[@class=\"Header-module__main___2ZC25\"]")
+    private WebElement bookingCom;
+
+    @FindBy(xpath = "//span[@class=\"sb-searchbox__title-text\"]")
+    private WebElement carRentalsTitle;
+
+    @FindBy(xpath = "//div[@class=\"Text-module__root--variant-headline_1___29-Qz css-19idom\"]")
+    private WebElement attractionsTitle;
+
+    @FindBy(xpath = "//div[@class=\"Header-module__main___K_XWi\"]")
+    private WebElement bookingComOnAttractions;
+
+    @FindBy(partialLinkText = "Варианты досуга")
+    private WebElement attractions;
+
+    @FindBy(partialLinkText = "Аренда машин")
+    private WebElement carRentals;
+
+    @FindBy(partialLinkText = "Авиабилеты")
+    private WebElement flightsButton;
 
     SoftAssert softAssert = new SoftAssert();
 
@@ -115,6 +145,7 @@ public class BasePage {
         return new StaysPage(driver);
     }
 
+    @Step("Check that the question marked button is enabled")
     public BasePage checkQuestionMarkButtonIsEnabled() {
         System.out.println("Question mark button is enabled: " + questionMarkButton.isEnabled());
         softAssert.assertTrue(questionMarkButton.isEnabled(), "Question mark button isn't enabled!");
@@ -127,6 +158,7 @@ public class BasePage {
         return this;
     }
 
+    @Step("Check that the Register button is displayed")
     public BasePage checkRegisterButtonIsDisplayed() {
         System.out.println("Register button is enabled: " + registerButton.isEnabled());
         softAssert.assertTrue(registerButton.isEnabled(), "Register button isn't enabled!");
@@ -138,5 +170,152 @@ public class BasePage {
         System.out.println("Stays button is enabled: " + staysButton.isEnabled());
         softAssert.assertTrue(staysButton.isEnabled(), "Stays button isn't enabled!");
         return new StaysPage(driver);
+    }
+
+    public AttractionsPage checkAttractionsPageButtonIsDisplayed() {
+        System.out.println("Attractions Page button is enabled: " + attractionsPageButton.isEnabled());
+        softAssert.assertTrue(attractionsPageButton.isEnabled());
+        return new AttractionsPage(driver);
+    }
+
+    @Step("Click on login button")
+    public LoginPage clickOnLoginButton() {
+        loginButton.click();
+        return new LoginPage(driver);
+    }
+
+    @Step("Check that flights button is displayed")
+    public FlightsPage checkFlightsButtonIsDisplayed() {
+        System.out.println("Flights button is displayed: " + flightsButton.isDisplayed());
+        softAssert.assertTrue(flightsButton.isDisplayed());
+        return new FlightsPage(driver);
+    }
+
+    @Step("Check that stays button is enabled")
+    public BasePage checkStaysButtonIsEnabled() {
+        System.out.println("Stays button is enabled: " + staysButton.isEnabled());
+        softAssert.assertTrue(staysButton.isEnabled());
+        return new StaysPage(driver);
+    }
+
+    @Step("Check stays title")
+    public BasePage getStaysTitle() {
+        System.out.println("Current title is: " + staysTitle.getText());
+        softAssert.assertTrue(staysTitle.isDisplayed());
+        return new FlightsPage(driver);
+    }
+
+    public BasePage getFlightsTitle() {
+        System.out.println("Current title is: " + flightsTitle.getText());
+        softAssert.assertTrue(flightsTitle.isDisplayed());
+        return new FlightsPage(driver);
+    }
+
+    public BasePage checkBookingComIsDisplayed() {
+        System.out.println("Booking.com is displayed " + bookingCom.isDisplayed());
+        softAssert.assertTrue(bookingCom.isDisplayed());
+        return new StaysPage(driver);
+    }
+
+    public BasePage clickOnBookingCom() {
+        bookingCom.click();
+        return this;
+    }
+
+    @Step("Check that car rentals button is displayed")
+    public BasePage checkCarRentalsButtonIsDisplayed() {
+        System.out.println("Car Rentals button is displayed: " + carRentals.isDisplayed());
+        softAssert.assertTrue(carRentals.isDisplayed());
+        return new FlightsPage(driver);
+    }
+
+    @Step("Click on car rentals")
+    public BasePage clickOnCarRentals() {
+        carRentals.click();
+        return this;
+    }
+
+    @Step("Check car rentals button is enabled")
+    public BasePage checkCarRentalsButtonIsEnabled() {
+        System.out.println("Car Rentals button is enabled: " + carRentals.isEnabled());
+        softAssert.assertTrue(carRentals.isEnabled());
+        return new StaysPage(driver);
+    }
+
+    @Step("Check car rentals title")
+    public BasePage getCarRentalsTitle() {
+        System.out.println("Current title is: " + carRentalsTitle.getText());
+        softAssert.assertTrue(carRentalsTitle.isDisplayed());
+        return new FlightsPage(driver);
+    }
+
+    @Step("Click on booking.com from cars page")
+    public BasePage clickOnBookingComFromCars() {
+        bookingComLogo.click();
+        return this;
+    }
+
+    @Step("Check that attractions button is displayed")
+    public AttractionsPage checkAttractionsButtonIsDisplayed() {
+        System.out.println("Attractions button is displayed: " + attractions.isDisplayed());
+        softAssert.assertTrue(attractions.isDisplayed());
+        return new AttractionsPage(driver);
+    }
+
+    @Step("Check that attractions button is enabled")
+    public AttractionsPage checkAttractionsButtonIsEnabled() {
+        System.out.println("Attractions button is enabled: " + attractions.isEnabled());
+        softAssert.assertTrue(attractions.isEnabled());
+        return new AttractionsPage(driver);
+    }
+
+    @Step("Click on attractions")
+    public BasePage clickOnAttractions() {
+        attractions.click();
+        return this;
+    }
+
+    @Step("Get attractions title")
+    public AttractionsPage getAttractionsTitle() {
+        System.out.println("Current title is: " + attractionsTitle.getText());
+        softAssert.assertTrue(attractionsTitle.isDisplayed());
+        return new AttractionsPage(driver);
+    }
+
+    @Step("Click on booking.com from attractions page")
+    public BasePage clickOnBookingComFromAttractions() {
+        bookingComOnAttractions.click();
+        return this;
+    }
+
+    @Step("Click on the question marked button")
+    public HelpCenterPage clickOnQuestionMarkButton() {
+        questionMarkButton.click();
+        return new HelpCenterPage(driver);
+    }
+
+    @Step("Check the menu items quantity")
+    public BasePage checkMenuItemsTitlesQuantity() {
+        System.out.println("Menu items: " + menuTabs.size());
+        return this;
+    }
+
+    @Step("Click on the car rentals menu item")
+    public CarRentalsPage clickOnCarRentalsItem() {
+        menuTabs.get(2).click();
+        return new CarRentalsPage(driver);
+    }
+
+    @Step("Check that the Register button has title 'Зарегистрироваться'")
+    public BasePage checkRegistrationButtonTitle() {
+        System.out.println("Registration button title: " + registerButton.getText());
+        softAssert.assertEquals(registerButton.getText(), "Зарегистрироваться");
+        return this;
+    }
+
+    @Step("Click on the Register button")
+    public RegisterPage clickOnRegistrationButton() {
+        registerButton.click();
+        return new RegisterPage(driver);
     }
 }
