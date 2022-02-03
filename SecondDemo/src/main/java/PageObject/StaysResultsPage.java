@@ -1,10 +1,7 @@
 package PageObject;
 
 import io.qameta.allure.Step;
-import org.openqa.selenium.ElementClickInterceptedException;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -82,7 +79,12 @@ public class StaysResultsPage extends BasePage {
 
     @Step("Check that overlay card is displayed")
     public StaysResultsPage checkOverlayCardIsDisplayed(){
-        System.out.println("Overlay card is displayed:" + overlayCard.isDisplayed());
+       try{
+           System.out.println("Overlay card is displayed:" + overlayCard.isDisplayed());
+           softAssert.assertTrue(overlayCard.isDisplayed(), "Overlay card isn't displayed");
+       } catch (NoSuchElementException e){
+           System.out.println("Overlay card isn't displayed");
+       }
         return this;
     }
 
