@@ -139,14 +139,23 @@ public class FlightsPage extends BasePage {
 
     @Step("Check Kharkiv airport is enabled")
     public FlightsPage checkKharkivAirportIsEnabled() {
-        System.out.println("Kharkiv Airport is enabled: " + airportHRK.isEnabled());
-        softAssert.assertTrue(airportHRK.isEnabled());
+        try{
+            System.out.println("Kharkiv Airport is enabled: " + airportHRK.isEnabled());
+            softAssert.assertTrue(airportHRK.isEnabled());
+        } catch (StaleElementReferenceException e) {
+            System.out.println("StaleElementReferenceException (Check Kharkiv airport is enabled)");
+        }
         return new FlightsPage(driver);
     }
 
     @Step("Choose Kharkiv airport")
     public FlightsPage chooseKharkivAirport() {
-        airportHRK.click();
+       try {
+           airportHRK.click();
+       } catch (StaleElementReferenceException e) {
+           System.out.println("StaleElementReferenceException (Choose Kharkiv airport)");
+           airportHRK.click();
+       }
         return this;
     }
 

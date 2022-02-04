@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-All_Test_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="tests.CheckPopularTour" hash-for-method="checkPopularTour">checkPopularTour</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="tests.CheckLoginPage" hash-for-method="checkValidDataLogIn(anneta792@gmail.com, Kozyreva89)">checkValidDataLogIn(anneta792@gmail.com, Kozyreva89)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -151,6 +151,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="tests.CheckPopularTour" hash-for-method="checkPopularTour">checkPopularTour</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="tests.CheckHelpCenterPage" hash-for-method="checkQuestionMarkButtonOpensHelpCenter">checkQuestionMarkButtonOpensHelpCenter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -162,11 +167,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="tests.CheckReturnToBasePage" hash-for-method="checkReturnToBasePage">checkReturnToBasePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="tests.CheckLoginPage" hash-for-method="checkValidDataLogIn(anneta792@gmail.com, Kozyreva89)">checkValidDataLogIn(anneta792@gmail.com, Kozyreva89)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-All_Test_Suite -->
@@ -181,6 +181,65 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.CheckLoginPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkValidDataLogIn(anneta792@gmail.com, Kozyreva89)">
+                  </a> <!-- checkValidDataLogIn(anneta792@gmail.com, Kozyreva89) -->
+                  <span class="method-name">checkValidDataLogIn</span>
+                  <span class="parameters">(anneta792@gmail.com, Kozyreva89)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The wrong title is displayed on the Password Page! expected [Введите пароль] but found [Войдите или создайте аккаунт]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at PageObject.LoginPage.checkPasswordPageIsDisplayed(LoginPage.java:88)
+	at tests.CheckLoginPage.checkValidDataLogIn(CheckLoginPage.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Check that user can log in with valid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
           <div class="suite-All_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -238,194 +297,19 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-failed -->
-          <div class="suite-All_Test_Suite-class-failed">
+          <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.CheckPopularTour</span>
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckReturnToBasePage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkPopularTour">
-                  </a> <!-- checkPopularTour -->
-                  <span class="method-name">checkPopularTour</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=97.0.4692.99)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-HCHNUOI&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_322&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [029615aa9382c1b6dec7fc39a3048113, isElementEnabled {id=d9e1f180-fc47-4a34-a6db-e2254cf753b3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57629/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (029615aa9382c1b6dec7fc39a3048113)] -&gt; xpath: //button[@class=&quot;Actionable-module__root___3GRl0 ListItem-module__root___3J0lf ListItem-module__root--spacing-medium___2hv0Z ListItem-module__root--interactive___3xZTV&quot;]]
-Session ID: 029615aa9382c1b6dec7fc39a3048113
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:190)
-	at PageObject.AttractionsPage.checkPopularThisWeekIsEnabled(AttractionsPage.java:235)
-	at tests.CheckPopularTour.checkPopularTour(CheckPopularTour.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-
-</div> <!-- stack-trace -->
+                  <a name="checkReturnToBasePage">
+                  </a> <!-- checkReturnToBasePage -->
+                  <span class="method-name">checkReturnToBasePage</span>
                   <em>
-(Check popular tour)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-failed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CheckHelpCenterPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkQuestionMarkButtonOpensHelpCenter">
-                  </a> <!-- checkQuestionMarkButtonOpensHelpCenter -->
-                  <span class="method-name">checkQuestionMarkButtonOpensHelpCenter</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CheckStaysResultPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkFilterPriceLess2000">
-                  </a> <!-- checkFilterPriceLess2000 -->
-                  <span class="method-name">checkFilterPriceLess2000</span>
-                  <em>
-(Check the filter 'Price is less than or equal to 2000')                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CheckCarRentalCoronavirusPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkCarRentalCoronavirusPage">
-                  </a> <!-- checkCarRentalCoronavirusPage -->
-                  <span class="method-name">checkCarRentalCoronavirusPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CheckLoginPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkValidDataLogIn(anneta792@gmail.com, Kozyreva89)">
-                  </a> <!-- checkValidDataLogIn(anneta792@gmail.com, Kozyreva89) -->
-                  <span class="method-name">checkValidDataLogIn</span>
-                  <span class="parameters">(anneta792@gmail.com, Kozyreva89)</span>
-                  <em>
-(Check that user can log in with valid data)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CheckFlightsPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkFlightTicket">
-                  </a> <!-- checkFlightTicket -->
-                  <span class="method-name">checkFlightTicket</span>
-                  <em>
-(Check flight ticket from Kharkiv to Barcelona)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CheckStaysPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkChoosingStaysOnStaysPage">
-                  </a> <!-- checkChoosingStaysOnStaysPage -->
-                  <span class="method-name">checkChoosingStaysOnStaysPage</span>
-                  <em>
-(Check the possibility of choosing stays)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CheckRegistrationViaEmail</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkRegistrationViaEmail">
-                  </a> <!-- checkRegistrationViaEmail -->
-                  <span class="method-name">checkRegistrationViaEmail</span>
-                  <em>
-(Check that User can do registration via Email)                  </em>
+(Check return to base page from car rentals and attractions page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -450,16 +334,48 @@ Session ID: 029615aa9382c1b6dec7fc39a3048113
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.CheckReturnToBasePage</span>
+              <span class="class-name">tests.CheckStaysResultPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkReturnToBasePage">
-                  </a> <!-- checkReturnToBasePage -->
-                  <span class="method-name">checkReturnToBasePage</span>
+                  <a name="checkFilterPriceLess2000">
+                  </a> <!-- checkFilterPriceLess2000 -->
+                  <span class="method-name">checkFilterPriceLess2000</span>
                   <em>
-(Check return to base page from car rentals and attractions page)                  </em>
+(Check the filter 'Price is less than or equal to 2000')                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckHelpCenterPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkQuestionMarkButtonOpensHelpCenter">
+                  </a> <!-- checkQuestionMarkButtonOpensHelpCenter -->
+                  <span class="method-name">checkQuestionMarkButtonOpensHelpCenter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckPopularTour</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPopularTour">
+                  </a> <!-- checkPopularTour -->
+                  <span class="method-name">checkPopularTour</span>
+                  <em>
+(Check popular tour)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -477,6 +393,72 @@ Session ID: 029615aa9382c1b6dec7fc39a3048113
                   <span class="method-name">CheckAttractionsPageSearch</span>
                   <em>
 (Check the search results on the Attraction page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckCarRentalCoronavirusPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCarRentalCoronavirusPage">
+                  </a> <!-- checkCarRentalCoronavirusPage -->
+                  <span class="method-name">checkCarRentalCoronavirusPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckStaysPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkChoosingStaysOnStaysPage">
+                  </a> <!-- checkChoosingStaysOnStaysPage -->
+                  <span class="method-name">checkChoosingStaysOnStaysPage</span>
+                  <em>
+(Check the possibility of choosing stays)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckFlightsPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFlightTicket">
+                  </a> <!-- checkFlightTicket -->
+                  <span class="method-name">checkFlightTicket</span>
+                  <em>
+(Check flight ticket from Kharkiv to Barcelona)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckRegistrationViaEmail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkRegistrationViaEmail">
+                  </a> <!-- checkRegistrationViaEmail -->
+                  <span class="method-name">checkRegistrationViaEmail</span>
+                  <em>
+(Check that User can do registration via Email)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -653,53 +635,53 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checksForLanguageChanges')
-data.setCell(0, 2, 'tests.CheckForLanguageChange')
-data.setCell(0, 3, 34377);
+data.setCell(0, 1, 'checkFilterPriceLess2000')
+data.setCell(0, 2, 'tests.CheckStaysResultPage')
+data.setCell(0, 3, 28847);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkFlightTicket')
-data.setCell(1, 2, 'tests.CheckFlightsPage')
-data.setCell(1, 3, 21736);
+data.setCell(1, 1, 'checksForLanguageChanges')
+data.setCell(1, 2, 'tests.CheckForLanguageChange')
+data.setCell(1, 3, 28623);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkReturnToBasePage')
-data.setCell(2, 2, 'tests.CheckReturnToBasePage')
-data.setCell(2, 3, 18822);
+data.setCell(2, 1, 'CheckCurrencyChangeAttractionPage')
+data.setCell(2, 2, 'tests.CheckCurrencyChangeAttractionPage')
+data.setCell(2, 3, 18451);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkFilterPriceLess2000')
-data.setCell(3, 2, 'tests.CheckStaysResultPage')
-data.setCell(3, 3, 17666);
+data.setCell(3, 1, 'checkFlightTicket')
+data.setCell(3, 2, 'tests.CheckFlightsPage')
+data.setCell(3, 3, 17754);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkChoosingStaysOnStaysPage')
-data.setCell(4, 2, 'tests.CheckStaysPage')
-data.setCell(4, 3, 16677);
+data.setCell(4, 1, 'CheckAttractionsPageSearch')
+data.setCell(4, 2, 'tests.CheckAttractionsPageSearch')
+data.setCell(4, 3, 17120);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'checkPopularTour')
 data.setCell(5, 2, 'tests.CheckPopularTour')
-data.setCell(5, 3, 14613);
+data.setCell(5, 3, 15586);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'CheckCurrencyChangeAttractionPage')
-data.setCell(6, 2, 'tests.CheckCurrencyChangeAttractionPage')
-data.setCell(6, 3, 13822);
+data.setCell(6, 1, 'checkReturnToBasePage')
+data.setCell(6, 2, 'tests.CheckReturnToBasePage')
+data.setCell(6, 3, 14437);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'CheckAttractionsPageSearch')
-data.setCell(7, 2, 'tests.CheckAttractionsPageSearch')
-data.setCell(7, 3, 11380);
+data.setCell(7, 1, 'checkChoosingStaysOnStaysPage')
+data.setCell(7, 2, 'tests.CheckStaysPage')
+data.setCell(7, 3, 13344);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'checkRegistrationViaEmail')
-data.setCell(8, 2, 'tests.CheckRegistrationViaEmail')
-data.setCell(8, 3, 9169);
+data.setCell(8, 1, 'checkCarRentalCoronavirusPage')
+data.setCell(8, 2, 'tests.CheckCarRentalCoronavirusPage')
+data.setCell(8, 3, 11178);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'checkQuestionMarkButtonOpensHelpCenter')
-data.setCell(9, 2, 'tests.CheckHelpCenterPage')
-data.setCell(9, 3, 8055);
+data.setCell(9, 1, 'checkRegistrationViaEmail')
+data.setCell(9, 2, 'tests.CheckRegistrationViaEmail')
+data.setCell(9, 3, 7759);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'checkValidDataLogIn')
 data.setCell(10, 2, 'tests.CheckLoginPage')
-data.setCell(10, 3, 7708);
+data.setCell(10, 3, 7045);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'checkCarRentalCoronavirusPage')
-data.setCell(11, 2, 'tests.CheckCarRentalCoronavirusPage')
-data.setCell(11, 3, 6006);
+data.setCell(11, 1, 'checkQuestionMarkButtonOpensHelpCenter')
+data.setCell(11, 2, 'tests.CheckHelpCenterPage')
+data.setCell(11, 3, 6567);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
@@ -737,40 +719,40 @@ return data;
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">11521 ms</span>
+                <span class="method-start">17468 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckCarRentalCoronavirusPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkCarRentalCoronavirusPage</span>
-                <span class="method-start">12281 ms</span>
+                <span class="method-start">18560 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">18290 ms</span>
+                <span class="method-start">29746 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckCurrencyChangeAttractionPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CheckCurrencyChangeAttractionPage</span>
-                <span class="method-start">18974 ms</span>
+                <span class="method-start">30617 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">32813 ms</span>
+                <span class="method-start">49081 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckFlightsPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkFlightTicket</span>
-                <span class="method-start">33643 ms</span>
+                <span class="method-start">49920 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">55381 ms</span>
+                <span class="method-start">67677 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -779,90 +761,90 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checksForLanguageChanges</span>
-                <span class="method-start">56170 ms</span>
+                <span class="method-start">68561 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">91129 ms</span>
+                <span class="method-start">97939 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckHelpCenterPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkQuestionMarkButtonOpensHelpCenter</span>
-                <span class="method-start">91890 ms</span>
+                <span class="method-start">98761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">99948 ms</span>
+                <span class="method-start">105331 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckLoginPage</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">checkValidDataLogIn(anneta792@gmail.com, Kozyreva89)</span>
-                <span class="method-start">100700 ms</span>
+                <span class="method-start">106205 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">108415 ms</span>
+                <span class="method-start">113492 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckPopularTour</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">checkPopularTour</span>
-                <span class="method-start">109186 ms</span>
+                <span class="method-start">114241 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">124438 ms</span>
+                <span class="method-start">129829 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckRegistrationViaEmail</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkRegistrationViaEmail</span>
-                <span class="method-start">125191 ms</span>
+                <span class="method-start">130568 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">134364 ms</span>
+                <span class="method-start">138330 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckReturnToBasePage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkReturnToBasePage</span>
-                <span class="method-start">135114 ms</span>
+                <span class="method-start">139191 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">153940 ms</span>
+                <span class="method-start">153630 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckStaysPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkChoosingStaysOnStaysPage</span>
-                <span class="method-start">154707 ms</span>
+                <span class="method-start">154519 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">171387 ms</span>
+                <span class="method-start">167868 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckStaysResultPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkFilterPriceLess2000</span>
-                <span class="method-start">172182 ms</span>
+                <span class="method-start">168757 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">189850 ms</span>
+                <span class="method-start">197606 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

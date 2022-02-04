@@ -1,24 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 192.457 s <<< FAILURE! - in TestSuite
-tests.CheckForLanguageChange.checksForLanguageChanges  Time elapsed: 34.455 s  <<< FAILURE!
+Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 200.98 s <<< FAILURE! - in TestSuite
+tests.CheckForLanguageChange.checksForLanguageChanges  Time elapsed: 29.464 s  <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
 	The wrong language is displayed on the page Flights expected [Compare and book flights with ease] but found [Порівнюйте і бронюйте перельоти з легкістю]
 	at tests.CheckForLanguageChange.checksForLanguageChanges(CheckForLanguageChange.java:30)
 
-tests.CheckPopularTour.checkPopularTour  Time elapsed: 14.756 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=97.0.4692.99)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-HCHNUOI', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_322'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [029615aa9382c1b6dec7fc39a3048113, isElementEnabled {id=d9e1f180-fc47-4a34-a6db-e2254cf753b3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57629/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (029615aa9382c1b6dec7fc39a3048113)] -> xpath: //button[@class="Actionable-module__root___3GRl0 ListItem-module__root___3J0lf ListItem-module__root--spacing-medium___2hv0Z ListItem-module__root--interactive___3xZTV"]]
-Session ID: 029615aa9382c1b6dec7fc39a3048113
-	at tests.CheckPopularTour.checkPopularTour(CheckPopularTour.java:28)
+tests.CheckLoginPage.checkValidDataLogIn[anneta792@gmail.com, Kozyreva89](1)  Time elapsed: 7.368 s  <<< FAILURE!
+java.lang.AssertionError: The wrong title is displayed on the Password Page! expected [Введите пароль] but found [Войдите или создайте аккаунт]
+	at tests.CheckLoginPage.checkValidDataLogIn(CheckLoginPage.java:30)
 
