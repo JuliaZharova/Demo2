@@ -1,6 +1,7 @@
 package PageObject;
 
 import io.qameta.allure.Step;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -112,8 +113,13 @@ public class AttractionsPage extends BasePage {
 
     @Step("Click on the CheckPrice Button on Attractions Page")
     public AttractionsPage clickOnCheckPriceButton() {
-       System.out.println("Nant is displayed: " + nant.isDisplayed());
-       nant.click();
+      try {
+          System.out.println("Nant is displayed: " + nant.isDisplayed());
+          nant.click();
+      } catch (StaleElementReferenceException e){
+          System.out.println("StaleElementReferenceException (Click on the CheckPrice Button on Attractions Page)");
+          nant.click();
+      }
         return this;
     }
 
@@ -228,7 +234,12 @@ public class AttractionsPage extends BasePage {
 
     @Step("Choose dubai cruise")
     public AttractionsPage chooseDubaiCruise() {
-        dubaiCruise.get(0).click();
+      try {
+          dubaiCruise.get(0).click();
+      } catch (StaleElementReferenceException e){
+         System.out.println("StaleElementReferenceException (Choose dubai cruise)");
+          dubaiCruise.get(0).click();
+      }
         return this;
     }
 

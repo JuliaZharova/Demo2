@@ -2,58 +2,48 @@
 <testng-results skipped="0" failed="2" ignored="0" total="12" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="190662" started-at="2022-02-04T00:11:33 EET" finished-at="2022-02-04T00:14:44 EET">
+  <suite name="All Test Suite" duration-ms="198503" started-at="2022-02-04T08:50:01 EET" finished-at="2022-02-04T08:53:20 EET">
     <groups>
       <group name="regression">
-        <method signature="CheckAttractionsPageSearch.CheckAttractionsPageSearch()[pri:0, instance:tests.CheckAttractionsPageSearch@3deb2326]" name="CheckAttractionsPageSearch" class="tests.CheckAttractionsPageSearch"/>
-        <method signature="CheckCarRentalCoronavirusPage.checkCarRentalCoronavirusPage()[pri:0, instance:tests.CheckCarRentalCoronavirusPage@62d363ab]" name="checkCarRentalCoronavirusPage" class="tests.CheckCarRentalCoronavirusPage"/>
-        <method signature="CheckForLanguageChange.checksForLanguageChanges()[pri:0, instance:tests.CheckForLanguageChange@5ef8df1e]" name="checksForLanguageChanges" class="tests.CheckForLanguageChange"/>
-        <method signature="CheckHelpCenterPage.checkQuestionMarkButtonOpensHelpCenter()[pri:0, instance:tests.CheckHelpCenterPage@27cf3151]" name="checkQuestionMarkButtonOpensHelpCenter" class="tests.CheckHelpCenterPage"/>
-        <method signature="CheckRegistrationViaEmail.checkRegistrationViaEmail()[pri:0, instance:tests.CheckRegistrationViaEmail@4108fa66]" name="checkRegistrationViaEmail" class="tests.CheckRegistrationViaEmail"/>
-        <method signature="CheckReturnToBasePage.checkReturnToBasePage()[pri:0, instance:tests.CheckReturnToBasePage@1f130eaf]" name="checkReturnToBasePage" class="tests.CheckReturnToBasePage"/>
-        <method signature="CheckStaysResultPage.checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@21362712]" name="checkFilterPriceLess2000" class="tests.CheckStaysResultPage"/>
+        <method signature="CheckAttractionsPageSearch.CheckAttractionsPageSearch()[pri:0, instance:tests.CheckAttractionsPageSearch@7d373bcf]" name="CheckAttractionsPageSearch" class="tests.CheckAttractionsPageSearch"/>
+        <method signature="CheckCarRentalCoronavirusPage.checkCarRentalCoronavirusPage()[pri:0, instance:tests.CheckCarRentalCoronavirusPage@6d6bc158]" name="checkCarRentalCoronavirusPage" class="tests.CheckCarRentalCoronavirusPage"/>
+        <method signature="CheckForLanguageChange.checksForLanguageChanges()[pri:0, instance:tests.CheckForLanguageChange@54afd745]" name="checksForLanguageChanges" class="tests.CheckForLanguageChange"/>
+        <method signature="CheckHelpCenterPage.checkQuestionMarkButtonOpensHelpCenter()[pri:0, instance:tests.CheckHelpCenterPage@677dbd89]" name="checkQuestionMarkButtonOpensHelpCenter" class="tests.CheckHelpCenterPage"/>
+        <method signature="CheckRegistrationViaEmail.checkRegistrationViaEmail()[pri:0, instance:tests.CheckRegistrationViaEmail@263f04ca]" name="checkRegistrationViaEmail" class="tests.CheckRegistrationViaEmail"/>
+        <method signature="CheckReturnToBasePage.checkReturnToBasePage()[pri:0, instance:tests.CheckReturnToBasePage@2ca47471]" name="checkReturnToBasePage" class="tests.CheckReturnToBasePage"/>
+        <method signature="CheckStaysResultPage.checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@51768776]" name="checkFilterPriceLess2000" class="tests.CheckStaysResultPage"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CheckCurrencyChangeAttractionPage.CheckCurrencyChangeAttractionPage()[pri:0, instance:tests.CheckCurrencyChangeAttractionPage@7889a1ac]" name="CheckCurrencyChangeAttractionPage" class="tests.CheckCurrencyChangeAttractionPage"/>
-        <method signature="CheckFlightsPage.checkFlightTicket()[pri:0, instance:tests.CheckFlightsPage@3aee3976]" name="checkFlightTicket" class="tests.CheckFlightsPage"/>
-        <method signature="CheckLoginPage.checkValidDataLogIn(java.lang.String, java.lang.String)[pri:0, instance:tests.CheckLoginPage@127e70c5]" name="checkValidDataLogIn" class="tests.CheckLoginPage"/>
-        <method signature="CheckPopularTour.checkPopularTour()[pri:0, instance:tests.CheckPopularTour@5910de75]" name="checkPopularTour" class="tests.CheckPopularTour"/>
-        <method signature="CheckStaysPage.checkChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@7e0aadd0]" name="checkChoosingStaysOnStaysPage" class="tests.CheckStaysPage"/>
+        <method signature="CheckCurrencyChangeAttractionPage.CheckCurrencyChangeAttractionPage()[pri:0, instance:tests.CheckCurrencyChangeAttractionPage@5dda6f9]" name="CheckCurrencyChangeAttractionPage" class="tests.CheckCurrencyChangeAttractionPage"/>
+        <method signature="CheckFlightsPage.checkFlightTicket()[pri:0, instance:tests.CheckFlightsPage@10027fc9]" name="checkFlightTicket" class="tests.CheckFlightsPage"/>
+        <method signature="CheckLoginPage.checkValidDataLogIn(java.lang.String, java.lang.String)[pri:0, instance:tests.CheckLoginPage@fff25f1]" name="checkValidDataLogIn" class="tests.CheckLoginPage"/>
+        <method signature="CheckPopularTour.checkPopularTour()[pri:0, instance:tests.CheckPopularTour@c00fff0]" name="checkPopularTour" class="tests.CheckPopularTour"/>
+        <method signature="CheckStaysPage.checkChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@5a021cb9]" name="checkChoosingStaysOnStaysPage" class="tests.CheckStaysPage"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="F:/Demo2/Demo2/SecondDemo" duration-ms="190662" started-at="2022-02-04T00:11:33 EET" finished-at="2022-02-04T00:14:44 EET">
+    <test name="F:/Demo2/Demo2/SecondDemo" duration-ms="198503" started-at="2022-02-04T08:50:01 EET" finished-at="2022-02-04T08:53:20 EET">
       <class name="tests.CheckFlightsPage">
-        <test-method status="PASS" signature="checkFlightTicket()[pri:0, instance:tests.CheckFlightsPage@3aee3976]" name="checkFlightTicket" duration-ms="21736" started-at="2022-02-04T00:12:07 EET" description="Check flight ticket from Kharkiv to Barcelona" finished-at="2022-02-04T00:12:29 EET">
+        <test-method status="PASS" signature="checkFlightTicket()[pri:0, instance:tests.CheckFlightsPage@10027fc9]" name="checkFlightTicket" duration-ms="17754" started-at="2022-02-04T08:50:51 EET" description="Check flight ticket from Kharkiv to Barcelona" finished-at="2022-02-04T08:51:09 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFlightTicket -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckFlightsPage@3aee3976]" name="closeBrowser" is-config="true" duration-ms="787" started-at="2022-02-04T00:12:29 EET" description="Quit driver" finished-at="2022-02-04T00:12:30 EET">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckFlightsPage@10027fc9]" name="closeBrowser" is-config="true" duration-ms="881" started-at="2022-02-04T08:51:09 EET" description="Quit driver" finished-at="2022-02-04T08:51:10 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.CheckFlightsPage -->
       <class name="tests.CheckReturnToBasePage">
-        <test-method status="PASS" signature="checkReturnToBasePage()[pri:0, instance:tests.CheckReturnToBasePage@1f130eaf]" name="checkReturnToBasePage" duration-ms="18822" started-at="2022-02-04T00:13:48 EET" description="Check return to base page from car rentals and attractions page" finished-at="2022-02-04T00:14:07 EET">
+        <test-method status="PASS" signature="checkReturnToBasePage()[pri:0, instance:tests.CheckReturnToBasePage@2ca47471]" name="checkReturnToBasePage" duration-ms="14437" started-at="2022-02-04T08:52:21 EET" description="Check return to base page from car rentals and attractions page" finished-at="2022-02-04T08:52:35 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkReturnToBasePage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckReturnToBasePage@1f130eaf]" name="closeBrowser" is-config="true" duration-ms="764" started-at="2022-02-04T00:14:07 EET" description="Quit driver" finished-at="2022-02-04T00:14:08 EET">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckReturnToBasePage@2ca47471]" name="closeBrowser" is-config="true" duration-ms="885" started-at="2022-02-04T08:52:35 EET" description="Quit driver" finished-at="2022-02-04T08:52:36 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.CheckReturnToBasePage -->
-      <class name="tests.CheckStaysPage">
-        <test-method status="PASS" signature="checkChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@7e0aadd0]" name="checkChoosingStaysOnStaysPage" duration-ms="16677" started-at="2022-02-04T00:14:08 EET" description="Check the possibility of choosing stays" finished-at="2022-02-04T00:14:25 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkChoosingStaysOnStaysPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckStaysPage@7e0aadd0]" name="closeBrowser" is-config="true" duration-ms="793" started-at="2022-02-04T00:14:25 EET" description="Quit driver" finished-at="2022-02-04T00:14:26 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- tests.CheckStaysPage -->
       <class name="tests.CheckForLanguageChange">
-        <test-method status="FAIL" signature="checksForLanguageChanges()[pri:0, instance:tests.CheckForLanguageChange@5ef8df1e]" name="checksForLanguageChanges" duration-ms="34377" started-at="2022-02-04T00:12:30 EET" description="Check that all pages are in the same language" finished-at="2022-02-04T00:13:04 EET">
+        <test-method status="FAIL" signature="checksForLanguageChanges()[pri:0, instance:tests.CheckForLanguageChange@54afd745]" name="checksForLanguageChanges" duration-ms="28623" started-at="2022-02-04T08:51:10 EET" description="Check that all pages are in the same language" finished-at="2022-02-04T08:51:39 EET">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -104,23 +94,33 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checksForLanguageChanges -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckForLanguageChange@5ef8df1e]" name="closeBrowser" is-config="true" duration-ms="758" started-at="2022-02-04T00:13:04 EET" description="Quit driver" finished-at="2022-02-04T00:13:05 EET">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckForLanguageChange@54afd745]" name="closeBrowser" is-config="true" duration-ms="818" started-at="2022-02-04T08:51:40 EET" description="Quit driver" finished-at="2022-02-04T08:51:40 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.CheckForLanguageChange -->
+      <class name="tests.CheckStaysPage">
+        <test-method status="PASS" signature="checkChoosingStaysOnStaysPage()[pri:0, instance:tests.CheckStaysPage@5a021cb9]" name="checkChoosingStaysOnStaysPage" duration-ms="13344" started-at="2022-02-04T08:52:36 EET" description="Check the possibility of choosing stays" finished-at="2022-02-04T08:52:49 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkChoosingStaysOnStaysPage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckStaysPage@5a021cb9]" name="closeBrowser" is-config="true" duration-ms="887" started-at="2022-02-04T08:52:49 EET" description="Quit driver" finished-at="2022-02-04T08:52:50 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.CheckStaysPage -->
       <class name="tests.CheckCarRentalCoronavirusPage">
-        <test-method status="PASS" signature="checkCarRentalCoronavirusPage()[pri:0, instance:tests.CheckCarRentalCoronavirusPage@62d363ab]" name="checkCarRentalCoronavirusPage" duration-ms="6006" started-at="2022-02-04T00:11:46 EET" finished-at="2022-02-04T00:11:52 EET">
+        <test-method status="PASS" signature="checkCarRentalCoronavirusPage()[pri:0, instance:tests.CheckCarRentalCoronavirusPage@6d6bc158]" name="checkCarRentalCoronavirusPage" duration-ms="11178" started-at="2022-02-04T08:50:20 EET" finished-at="2022-02-04T08:50:31 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCarRentalCoronavirusPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckCarRentalCoronavirusPage@62d363ab]" name="closeBrowser" is-config="true" duration-ms="681" started-at="2022-02-04T00:11:52 EET" description="Quit driver" finished-at="2022-02-04T00:11:52 EET">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckCarRentalCoronavirusPage@6d6bc158]" name="closeBrowser" is-config="true" duration-ms="865" started-at="2022-02-04T08:50:31 EET" description="Quit driver" finished-at="2022-02-04T08:50:32 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.CheckCarRentalCoronavirusPage -->
       <class name="tests.CheckLoginPage">
-        <test-method status="PASS" signature="checkValidDataLogIn(java.lang.String, java.lang.String)[pri:0, instance:tests.CheckLoginPage@127e70c5]" name="checkValidDataLogIn" duration-ms="7708" started-at="2022-02-04T00:13:14 EET" description="Check that user can log in with valid data" data-provider="validDataForLogIn" finished-at="2022-02-04T00:13:22 EET">
+        <test-method status="FAIL" signature="checkValidDataLogIn(java.lang.String, java.lang.String)[pri:0, instance:tests.CheckLoginPage@fff25f1]" name="checkValidDataLogIn" duration-ms="7045" started-at="2022-02-04T08:51:48 EET" description="Check that user can log in with valid data" data-provider="validDataForLogIn" finished-at="2022-02-04T08:51:55 EET">
           <params>
             <param index="0">
               <value>
@@ -133,55 +133,18 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkValidDataLogIn -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckLoginPage@127e70c5]" name="closeBrowser" is-config="true" duration-ms="768" started-at="2022-02-04T00:13:22 EET" description="Quit driver" finished-at="2022-02-04T00:13:23 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- tests.CheckLoginPage -->
-      <class name="tests.CheckPopularTour">
-        <test-method status="FAIL" signature="checkPopularTour()[pri:0, instance:tests.CheckPopularTour@5910de75]" name="checkPopularTour" duration-ms="14613" started-at="2022-02-04T00:13:23 EET" description="Check popular tour" finished-at="2022-02-04T00:13:37 EET">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=97.0.4692.99)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-HCHNUOI', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_322'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [029615aa9382c1b6dec7fc39a3048113, isElementEnabled {id=d9e1f180-fc47-4a34-a6db-e2254cf753b3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57629/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (029615aa9382c1b6dec7fc39a3048113)] -> xpath: //button[@class="Actionable-module__root___3GRl0 ListItem-module__root___3J0lf ListItem-module__root--spacing-medium___2hv0Z ListItem-module__root--interactive___3xZTV"]]
-Session ID: 029615aa9382c1b6dec7fc39a3048113]]>
+              <![CDATA[The wrong title is displayed on the Password Page! expected [Введите пароль] but found [Войдите или создайте аккаунт]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=97.0.4692.99)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-HCHNUOI', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_322'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [029615aa9382c1b6dec7fc39a3048113, isElementEnabled {id=d9e1f180-fc47-4a34-a6db-e2254cf753b3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\san9-\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57629/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (029615aa9382c1b6dec7fc39a3048113)] -> xpath: //button[@class="Actionable-module__root___3GRl0 ListItem-module__root___3J0lf ListItem-module__root--spacing-medium___2hv0Z ListItem-module__root--interactive___3xZTV"]]
-Session ID: 029615aa9382c1b6dec7fc39a3048113
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:190)
-at PageObject.AttractionsPage.checkPopularThisWeekIsEnabled(AttractionsPage.java:235)
-at tests.CheckPopularTour.checkPopularTour(CheckPopularTour.java:28)
+              <![CDATA[java.lang.AssertionError: The wrong title is displayed on the Password Page! expected [Введите пароль] but found [Войдите или создайте аккаунт]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at PageObject.LoginPage.checkPasswordPageIsDisplayed(LoginPage.java:88)
+at tests.CheckLoginPage.checkValidDataLogIn(CheckLoginPage.java:30)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -216,61 +179,71 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidDataLogIn -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckLoginPage@fff25f1]" name="closeBrowser" is-config="true" duration-ms="746" started-at="2022-02-04T08:51:55 EET" description="Quit driver" finished-at="2022-02-04T08:51:56 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.CheckLoginPage -->
+      <class name="tests.CheckPopularTour">
+        <test-method status="PASS" signature="checkPopularTour()[pri:0, instance:tests.CheckPopularTour@c00fff0]" name="checkPopularTour" duration-ms="15586" started-at="2022-02-04T08:51:56 EET" description="Check popular tour" finished-at="2022-02-04T08:52:11 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkPopularTour -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckPopularTour@5910de75]" name="closeBrowser" is-config="true" duration-ms="751" started-at="2022-02-04T00:13:38 EET" description="Quit driver" finished-at="2022-02-04T00:13:39 EET">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckPopularTour@c00fff0]" name="closeBrowser" is-config="true" duration-ms="737" started-at="2022-02-04T08:52:11 EET" description="Quit driver" finished-at="2022-02-04T08:52:12 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.CheckPopularTour -->
       <class name="tests.CheckStaysResultPage">
-        <test-method status="PASS" signature="checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@21362712]" name="checkFilterPriceLess2000" duration-ms="17666" started-at="2022-02-04T00:14:26 EET" description="Check the filter &#039;Price is less than or equal to 2000&#039;" finished-at="2022-02-04T00:14:43 EET">
+        <test-method status="PASS" signature="checkFilterPriceLess2000()[pri:0, instance:tests.CheckStaysResultPage@51768776]" name="checkFilterPriceLess2000" duration-ms="28847" started-at="2022-02-04T08:52:50 EET" description="Check the filter &#039;Price is less than or equal to 2000&#039;" finished-at="2022-02-04T08:53:19 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFilterPriceLess2000 -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckStaysResultPage@21362712]" name="closeBrowser" is-config="true" duration-ms="751" started-at="2022-02-04T00:14:43 EET" description="Quit driver" finished-at="2022-02-04T00:14:44 EET">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckStaysResultPage@51768776]" name="closeBrowser" is-config="true" duration-ms="812" started-at="2022-02-04T08:53:19 EET" description="Quit driver" finished-at="2022-02-04T08:53:20 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.CheckStaysResultPage -->
       <class name="tests.CheckAttractionsPageSearch">
-        <test-method status="PASS" signature="CheckAttractionsPageSearch()[pri:0, instance:tests.CheckAttractionsPageSearch@3deb2326]" name="CheckAttractionsPageSearch" duration-ms="11380" started-at="2022-02-04T00:11:33 EET" description="Check the search results on the Attraction page" finished-at="2022-02-04T00:11:45 EET">
+        <test-method status="PASS" signature="CheckAttractionsPageSearch()[pri:0, instance:tests.CheckAttractionsPageSearch@7d373bcf]" name="CheckAttractionsPageSearch" duration-ms="17120" started-at="2022-02-04T08:50:02 EET" description="Check the search results on the Attraction page" finished-at="2022-02-04T08:50:19 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckAttractionsPageSearch -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckAttractionsPageSearch@3deb2326]" name="closeBrowser" is-config="true" duration-ms="748" started-at="2022-02-04T00:11:45 EET" description="Quit driver" finished-at="2022-02-04T00:11:46 EET">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckAttractionsPageSearch@7d373bcf]" name="closeBrowser" is-config="true" duration-ms="1056" started-at="2022-02-04T08:50:19 EET" description="Quit driver" finished-at="2022-02-04T08:50:20 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.CheckAttractionsPageSearch -->
       <class name="tests.CheckRegistrationViaEmail">
-        <test-method status="PASS" signature="checkRegistrationViaEmail()[pri:0, instance:tests.CheckRegistrationViaEmail@4108fa66]" name="checkRegistrationViaEmail" duration-ms="9169" started-at="2022-02-04T00:13:39 EET" description="Check that User can do registration via Email" finished-at="2022-02-04T00:13:48 EET">
+        <test-method status="PASS" signature="checkRegistrationViaEmail()[pri:0, instance:tests.CheckRegistrationViaEmail@263f04ca]" name="checkRegistrationViaEmail" duration-ms="7759" started-at="2022-02-04T08:52:12 EET" description="Check that User can do registration via Email" finished-at="2022-02-04T08:52:20 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkRegistrationViaEmail -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckRegistrationViaEmail@4108fa66]" name="closeBrowser" is-config="true" duration-ms="747" started-at="2022-02-04T00:13:48 EET" description="Quit driver" finished-at="2022-02-04T00:13:48 EET">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckRegistrationViaEmail@263f04ca]" name="closeBrowser" is-config="true" duration-ms="858" started-at="2022-02-04T08:52:20 EET" description="Quit driver" finished-at="2022-02-04T08:52:21 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.CheckRegistrationViaEmail -->
       <class name="tests.CheckCurrencyChangeAttractionPage">
-        <test-method status="PASS" signature="CheckCurrencyChangeAttractionPage()[pri:0, instance:tests.CheckCurrencyChangeAttractionPage@7889a1ac]" name="CheckCurrencyChangeAttractionPage" duration-ms="13822" started-at="2022-02-04T00:11:52 EET" description="Check that the currency on the Attraction page has changed" finished-at="2022-02-04T00:12:06 EET">
+        <test-method status="PASS" signature="CheckCurrencyChangeAttractionPage()[pri:0, instance:tests.CheckCurrencyChangeAttractionPage@5dda6f9]" name="CheckCurrencyChangeAttractionPage" duration-ms="18451" started-at="2022-02-04T08:50:32 EET" description="Check that the currency on the Attraction page has changed" finished-at="2022-02-04T08:50:51 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckCurrencyChangeAttractionPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckCurrencyChangeAttractionPage@7889a1ac]" name="closeBrowser" is-config="true" duration-ms="828" started-at="2022-02-04T00:12:06 EET" description="Quit driver" finished-at="2022-02-04T00:12:07 EET">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckCurrencyChangeAttractionPage@5dda6f9]" name="closeBrowser" is-config="true" duration-ms="837" started-at="2022-02-04T08:50:51 EET" description="Quit driver" finished-at="2022-02-04T08:50:51 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.CheckCurrencyChangeAttractionPage -->
       <class name="tests.CheckHelpCenterPage">
-        <test-method status="PASS" signature="checkQuestionMarkButtonOpensHelpCenter()[pri:0, instance:tests.CheckHelpCenterPage@27cf3151]" name="checkQuestionMarkButtonOpensHelpCenter" duration-ms="8055" started-at="2022-02-04T00:13:05 EET" finished-at="2022-02-04T00:13:13 EET">
+        <test-method status="PASS" signature="checkQuestionMarkButtonOpensHelpCenter()[pri:0, instance:tests.CheckHelpCenterPage@677dbd89]" name="checkQuestionMarkButtonOpensHelpCenter" duration-ms="6567" started-at="2022-02-04T08:51:40 EET" finished-at="2022-02-04T08:51:47 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkQuestionMarkButtonOpensHelpCenter -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckHelpCenterPage@27cf3151]" name="closeBrowser" is-config="true" duration-ms="739" started-at="2022-02-04T00:13:13 EET" description="Quit driver" finished-at="2022-02-04T00:13:14 EET">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.CheckHelpCenterPage@677dbd89]" name="closeBrowser" is-config="true" duration-ms="852" started-at="2022-02-04T08:51:47 EET" description="Quit driver" finished-at="2022-02-04T08:51:48 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
