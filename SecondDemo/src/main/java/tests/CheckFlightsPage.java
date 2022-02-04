@@ -21,7 +21,7 @@ public class CheckFlightsPage {
                 .chooseOnOneWay()
                 .chooseAirportFrom()
                 .checkPopUpAirportFromIsEnabled()
-                /*.deleteKyiv()
+                .deleteKyiv()
                 .checkEmptySearchBoxFromIsEnabled()
                 .enterAirportFrom()
                 .checkKharkivAirportIsEnabled()
@@ -36,7 +36,7 @@ public class CheckFlightsPage {
                 .clickSearch()
                 .checkTicketIsDisplayed()
                 .clickOnTicket()
-                .getTitle()*/;
+                .getTitle();
     }
 
    @AfterMethod(description = "Quit driver")
